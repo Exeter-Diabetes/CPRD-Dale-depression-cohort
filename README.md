@@ -1,1 +1,1 @@
-# CPRD-Dale-depression-cohort
+# CPRD depression cohort
