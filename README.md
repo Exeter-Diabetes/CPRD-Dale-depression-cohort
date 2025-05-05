@@ -5,10 +5,14 @@ WORK IN PROGRESS
 ## Cohort definition
 The cohort is defined using several the following criteria:
 
-Inclusion:
+**Inclusion:**
   - A Quality Outcome Framework code for depression
 
-
+**Exclusion:**
+  - Patient is from one of the 44 practices that may have merged (unreliable patient data tracking).
+  - Undetermined Gender
+  - First depression code is a non-diagnostic code.
+  - 
 
 ```mermaid
 graph TD;
