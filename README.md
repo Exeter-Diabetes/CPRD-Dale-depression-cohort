@@ -6,18 +6,12 @@ WORK IN PROGRESS
 The cohort is defined using several the following criteria:
 
 **Inclusion:**
-  - A Quality Outcome Framework code for depression
+  - A Quality Outcome Framework code for depression.
 
 **Exclusion:**
-  - Patient is from one of the 44 practices that may have merged (unreliable patient data tracking).
+  - Patient is from one of the 44 practices that may have merged (unreliable patient data tracking)
   - Undetermined Gender
-  - First depression code is a non-diagnostic code.
-  - 
-
-
-
-
-
+  - First depression code is a non-diagnostic code
 
 
 ```mermaid
