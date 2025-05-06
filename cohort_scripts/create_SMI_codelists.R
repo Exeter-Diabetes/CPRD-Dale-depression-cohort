@@ -42,7 +42,7 @@ raw_smi_davidson_medcodes %>% distinct(patid) %>% count() #110k - more than expe
 #F20 - F31, F32.3, F33.3. 
 #F32.3 and F33.3 entries will be removed later, as they are related to depression, 
 #But for now, we extract everything.
-icd10_dict <- fread("C:/Users/dhand/OneDrive - King's College London/CPRD/code_lists/ICD10_Edition5_CodesAndTitlesAndMetadata_GB_20160401.txt")
+icd10_dict <- fread("")
 
 icd10_smi <- icd10_dict %>%
   filter(
