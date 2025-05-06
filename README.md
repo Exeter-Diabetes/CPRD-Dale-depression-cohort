@@ -6,7 +6,8 @@ WORK IN PROGRESS
 The cohort is defined using several the following criteria:
 
 **Inclusion:**
-  - A Quality Outcome Framework code for depression.
+  - A Quality Outcome Framework code for depression
+  - If the Quality Outcome Framework code is not diagnostic, another diagnostic "broad" depression code
 
 **Exclusion:**
   - Patient is from one of the 44 practices that may have merged (unreliable patient data tracking)
