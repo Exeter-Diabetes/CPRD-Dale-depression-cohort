@@ -12,7 +12,6 @@ The cohort is defined using the following criteria:
 **Exclusion:**
   - Patient is from one of the 44 practices that may have merged (unreliable patient data tracking)
   - Undetermined Gender
-  - First depression code is a non-diagnostic code
 
 
 ```mermaid
