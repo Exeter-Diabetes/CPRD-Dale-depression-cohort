@@ -1,0 +1,641 @@
+medcodeid,term,cleansedreadcode,snomedctconceptid,_qofcode,smi
+4082931000006110,schizophrenic reaction,,102940002,0,1
+4119081000006111,schizophrenic relative,,105453004,0,1
+8434671000006112,schizophrenia tom (therapy outcome measure) activity score,,1062101000000104,0,1
+8434681000006110,schizophrenia tom (therapy outcome measure) carer wellbeing score,,1062111000000102,0,1
+8434701000006113,schizophrenia tom (therapy outcome measure) impairment score,,1062121000000108,0,1
+8434711000006111,schizophrenia tom (therapy outcome measure) participation score,,1062131000000105,0,1
+8434721000006115,schizophrenia tom (therapy outcome measure) wellbeing score,,1062141000000101,0,1
+9326201000006116,psychosis in pregnancy,,10760461000119107,0,1
+8464961000006115,"recurrent reactive depressive episodes, severe, with psychosis",,1086471000000103,1,1
+424681000006118,"recurrent reactive depressive episodes, severe, with psychosis",Eu33316,1086471000000103,1,1
+2724221000000116,late onset substance-induced psychosis,,1087461000000107,0,1
+2724261000000112,late onset cocaine-induced psychosis,,1087481000000103,0,1
+2724281000000115,late onset lsd (lysergic acid diethylamide)-induced psychosis,,1087491000000101,0,1
+2672971000006116,"severe bipolar i disorder, most recent episode mixed, with psychotic features, mood-incongruent",,10875004,0,1
+2672961000006111,"severe mixed bipolar i disorder with psychotic features, mood-incongruent",,10875004,0,1
+2724301000000119,late onset cannabinoid-induced psychosis,,1087501000000107,0,1
+2724321000000111,late onset amphetamine-induced psychosis,,1087511000000109,0,1
+2729691000000119,cataleptic schizophrenia,,1089481000000106,0,1
+2674681000006116,"severe bipolar i disorder, most recent episode mixed, with psychotic features",,10981006,0,1
+2674671000006119,severe mixed bipolar i disorder with psychotic features,,10981006,0,1
+294730012,acute exacerbation of subchronic schizophrenia,E100300,111482003,0,1
+4196151000006111,subchronic schizophrenia with acute exacerbations,,111482003,0,1
+4196171000006118,"schizophrenia, catatonic, in remission",,111483008,1,1
+178723016,catatonic schizophrenia in remission,E102500,111483008,1,1
+371031000006115,[x]chronic undifferentiated schizophrenia,Eu20511,111484002,1,1
+1219653018,atypical schizophrenia,E10y000,111484002,1,1
+366571000006114,[x]atypical schizophrenia,Eu20311,111484002,1,1
+296031017,undifferentiated schizophrenia,Eu20300,111484002,1,1
+4196211000006116,"bipolar i disorder, most recent episode mixed, in full remission",,111485001,0,1
+4196201000006119,mixed bipolar i disorder in full remission,,111485001,0,1
+12736721000006110,fep - first episode psychosis,,1127191000000108,0,1
+2517511000006119,"chronic bipolar ii disorder, most recent episode major depressive",,1196001,0,1
+2705561000006112,chronic disorganised schizophrenia,,12939007,0,1
+294737010,chronic hebephrenic schizophrenia,E101200,12939007,0,1
+2705571000006117,chronic disorganized schizophrenia,,12939007,0,1
+2705961000006118,"severe bipolar ii disorder, most recent episode major depressive, in full remission",,12969000,0,1
+2708271000006111,factitious psychosis,,13127006,0,1
+8041781000006111,rapid cycling bipolar i disorder,,133091000119105,0,1
+294882016,mild bipolar disorder,E117100,13313007,1,1
+2715201000006111,"severe bipolar i disorder, single manic episode with psychotic features, mood-congruent",,13581000,0,1
+2717981000006118,mdi - manic-depressive illness,,13746004,1,1
+367101000006112,bipolar affective disorder,Eu31.00,13746004,1,1
+396791000006116,manic-depressive illness,Eu31.11,13746004,1,1
+396801000006115,manic-depressive psychosis,Eu31.12,13746004,1,1
+401865016,[x]other bipolar affective disorders,Eu31y00,13746004,1,1
+294881011,"unspecified bipolar affective disorder, unspecified",E117000,13746004,1,1
+296135011,"[x]bipolar affective disorder, unspecified",Eu31z00,13746004,1,1
+294892012,unspecified manic-depressive psychoses,E11y000,13746004,1,1
+294896010,other and unspecified manic-depressive psychoses nos,E11yz00,13746004,1,1
+294891017,other and unspecified manic-depressive psychoses,E11y.00,13746004,1,1
+396071000006119,[x]manic-depressive reaction,Eu31.13,13746004,1,1
+294880012,unspecified bipolar affective disorder,E117.00,13746004,1,1
+513871000006118,bipolar disorder,E11..11,13746004,1,1
+882311000006110,manic-depressive psychoses,E11..99,13746004,1,1
+294888017,"unspecified bipolar affective disorder, nos",E117z00,13746004,1,1
+2724061000006113,erotomanic delusion disorder,,14144000,0,1
+2726261000006113,subchronic disorganised schizophrenia with acute exacerbations,,14291003,0,1
+294738017,acute exacerbation of subchronic hebephrenic schizophrenia,E101300,14291003,0,1
+2726271000006118,subchronic disorganized schizophrenia with acute exacerbations,,14291003,0,1
+2729641000006117,"severe bipolar i disorder, single manic episode without psychotic features",,14495005,0,1
+2522281000006115,"bipolar i disorder, single manic episode with postpartum onset",,1499003,0,1
+460273017,[v]personal history of schizophrenia,ZV11000,161464003,0,1
+251628010,h/o: schizophrenia,1464.00,161468000,0,1
+4539931000006112,history of schizophrenia,,161468000,0,1
+2501011000006119,"severe bipolar i disorder, most recent episode manic, without psychotic features",,162004,1,1
+513691000006116,severe manic bipolar i disorder without psychotic features,E114300,162004,1,1
+2758341000006117,"bipolar ii disorder, most recent episode major depressive",,16295005,0,1
+294895014,mixed bipolar i disorder,E11y300,16506000,0,1
+2761681000006119,"bipolar i disorder, most recent episode mixed",,16506000,0,1
+28758018,subchronic schizophrenia,E100100,16990005,1,1
+2782051000006112,"bipolar i disorder, most recent episode manic with catatonic features",,17782008,0,1
+294714016,postpartum psychosis,E03y300,18260003,0,1
+223611000000117,non-organic psychosis,E13z.00,191525009,1,1
+25461000006115,other nonorganic psychoses,E13..00,191525009,1,1
+294724012,non-organic psychoses,E1...00,191525009,1,1
+294949018,other specified non-organic psychoses,E1y..00,191525009,1,1
+401862018,[x]unspecified nonorganic psychosis,Eu2z.00,191525009,1,1
+401771016,non-organic psychosis nos,E1z..00,191525009,1,1
+882281000006113,schizophrenic psychoses nos,E10..98,191526005,1,1
+294725013,schizophrenic disorders,E10..00,191526005,1,1
+882291000006111,schizophrenic psychoses,E10..99,191526005,1,1
+294727017,simple schizophrenia,E100.00,191527001,1,1
+294726014,schizophrenia simplex,E100.11,191527001,1,1
+426881000006111,[x]simple schizophrenia,Eu20600,191527001,1,1
+294734015,simple schizophrenia nos,E100z00,191527001,1,1
+12482001000006117,acute exacerbation of subchronic schizophrenia,,191530008,1,1
+294731011,acute exacerbation of chronic schizophrenia,E100400,191531007,1,1
+4763631000006114,acute exacerbation of subchronic disorganized schizophrenia,,191538001,1,1
+12481991000006119,acute exacerbation of subchronic hebephrenic schizophrenia,,191538001,1,1
+4763611000006115,acute exacerbation of subchronic disorganised schizophrenia,,191538001,1,1
+294739013,acute exacerbation of chronic hebephrenic schizophrenia,E101400,191539009,1,1
+4763661000006117,acute exacerbation of chronic disorganized schizophrenia,,191539009,1,1
+4763641000006116,acute exacerbation of chronic disorganised schizophrenia,,191539009,1,1
+370451000006110,[x]catatonic schizophrenia,Eu20200,191542003,1,1
+294753013,catatonic schizophrenia nos,E102z00,191542003,1,1
+425651000006113,[x]schizophrenic catatonia,Eu20213,191542003,1,1
+4763701000006113,schizophrenic flexibilatis cerea,,191542003,1,1
+294742019,catatonic schizophrenia,E102.00,191542003,1,1
+4763691000006113,"schizophrenia, catatonic",,191542003,1,1
+294744018,unspecified catatonic schizophrenia,E102000,191542003,1,1
+425641000006111,[x]schizophrenic catalepsy,Eu20212,191542003,1,1
+294743012,[x]schizophrenic flexibilatis cerea,Eu20214,191542003,1,1
+4763731000006117,subchronic catatonic schizophrenia with acute exacerbation,,191547009,1,1
+294750011,acute exacerbation of subchronic catatonic schizophrenia,E102300,191547009,1,1
+4763751000006112,chronic catatonic schizophrenia with acute exacerbation,,191548004,1,1
+294751010,acute exacerbation of chronic catatonic schizophrenia,E102400,191548004,1,1
+294757014,acute exacerbation of subchronic paranoid schizophrenia,E103300,191554003,1,1
+4763771000006119,subchronic paranoid schizophrenia with acute exacerbation,,191554003,1,1
+294758016,acute exacerbation of chronic paranoid schizophrenia,E103400,191555002,1,1
+4763791000006118,chronic paranoid schizophrenia with acute exacerbation,,191555002,1,1
+395031000006114,[x]latent schizophrenic reaction,Eu21.11,191559008,1,1
+395021000006111,[x]latent schizophrenia,Eu21.13,191559008,1,1
+294771018,latent schizophrenia nos,E105z00,191559008,1,1
+294764011,latent schizophrenia,E105.00,191559008,1,1
+294765012,unspecified latent schizophrenia,E105000,191559008,1,1
+294766013,subchronic latent schizophrenia,E105100,191561004,1,1
+294767016,chronic latent schizophrenia,E105200,191562006,1,1
+294768014,acute exacerbation of subchronic latent schizophrenia,E105300,191563001,1,1
+294769018,acute exacerbation of chronic latent schizophrenia,E105400,191564007,1,1
+4763861000006116,"latent schizophrenia, in remission",,191565008,1,1
+294770017,latent schizophrenia in remission,E105500,191565008,1,1
+882301000006112,acute schizo affective psychosis,E107.99,191567000,1,1
+155161000006117,schizo-affective schizophrenia nos,E107z00,191567000,1,1
+78531000006116,unspecified schizo-affective schizophrenia,E107000,191567000,1,1
+155141000006116,schizoaffective schizophrenia,E107.00,191567000,1,1
+294773015,cyclic schizophrenia,E107.11,191567000,1,1
+123611000006110,subchronic schizo-affective schizophrenia,E107100,191569002,1,1
+4763891000006112,subchronic schizoaffective schizophrenia,,191569002,1,1
+556631000006116,chronic schizoaffective schizophrenia,E107200,191570001,1,1
+456801000006115,acute exacerbation subchronic schizo-affective schizophrenia,E107300,191571002,1,1
+4763911000006114,acute exacerbation of subchronic schizoaffective schizophrenia,,191571002,1,1
+456731000006115,acute exacerbation of chronic schizo-affective schizophrenia,E107400,191572009,1,1
+4763921000006118,acute exacerbation of chronic schizoaffective schizophrenia,,191572009,1,1
+4763951000006110,"schizophrenia, schizoaffective, in remission",,191574005,1,1
+4763941000006113,"schizoaffective schizophrenia, in remission",,191574005,1,1
+155151000006119,schizoaffective schizophrenia in remission,E107500,191574005,1,1
+294788013,cenesthopathic schizophrenia,E10y.11,191577003,1,1
+294787015,coenesthopathic schizophrenia,E10y100,191577003,1,1
+294803011,"single manic episode, mild",E110100,191583000,1,1
+294804017,"single manic episode, moderate",E110200,191584006,1,1
+294806015,"single manic episode, severe, with psychosis",E110400,191586008,1,1
+294808019,single manic episode in full remission,E110600,191588009,1,1
+294810017,recurrent manic episodes,E111.00,191590005,1,1
+294811018,"recurrent manic episodes, unspecified",E111000,191590005,1,1
+424661000006111,[x]recurrent manic episodes,Eu31y12,191590005,1,1
+294818012,recurrent manic episode nos,E111z00,191590005,1,1
+294812013,"recurrent manic episodes, mild",E111100,191592002,1,1
+294813015,"recurrent manic episodes, moderate",E111200,191593007,1,1
+294815010,"recurrent manic episodes, severe, with psychosis",E111400,191595000,1,1
+294817019,"recurrent manic episodes, in full remission",E111600,191597008,1,1
+294828015,"single major depressive episode, severe, with psychosis",E112400,191604000,1,1
+294840015,"recurrent major depressive episodes, severe, with psychosis",E113400,191613003,1,1
+11921141000006115,[x]recurrent severe episodes/reactive depressive psychosis,,191613003,1,1
+294848010,"bipolar affective disorder, currently manic, unspecified",E114000,191618007,1,1
+367081000006116,[x]bipolar affect disorder cur epi manic wout psychotic symp,Eu31100,191618007,1,1
+513801000006112,"bipolar affective disorder, current episode manic",E114.00,191618007,1,1
+294847017,manic-depressive - now manic,E114.11,191618007,1,1
+294858014,"bipolar affective disorder, currently manic, nos",E114z00,191618007,1,1
+294849019,"bipolar affective disorder, currently manic, mild",E114100,191620005,1,1
+294850019,"bipolar affective disorder, currently manic, moderate",E114200,191621009,1,1
+513701000006116,"bipolar affect disord, currently manic,severe with psychosis",E114400,191623007,1,1
+367071000006119,"bipolar affective disorder, currently manic, severe, with psychosis",Eu31200,191623007,1,1
+513811000006110,"bipolar affective disorder, currently manic, in full remission",E114600,191625000,1,1
+294868016,"bipolar affective disorder, currently depressed, nos",E115z00,191627008,1,1
+513751000006117,"bipolar affective disorder, current episode depression",E115.00,191627008,1,1
+294860011,manic-depressive - now depressed,E115.11,191627008,1,1
+294861010,"bipolar affective disorder, currently depressed, unspecified",E115000,191627008,1,1
+294862015,"bipolar affective disorder, currently depressed, mild",E115100,191629006,1,1
+367091000006118,[x]bipolar affect disorder cur epi mild or moderate depressn,Eu31300,191630001,1,1
+294863013,"bipolar affective disorder, currently depressed, moderate",E115200,191630001,1,1
+12463361000006113,"bipolar affective disorder, currently depressed, severe, with psychosis",,191632009,1,1
+513861000006113,"bipolar affective disorder, currently depressed, in full remission",E115600,191634005,1,1
+294869012,mixed bipolar affective disorder,E116.00,191636007,1,1
+294870013,"mixed bipolar affective disorder, unspecified",E116000,191636007,1,1
+294877011,"mixed bipolar affective disorder, nos",E116z00,191636007,1,1
+294871012,"mixed bipolar affective disorder, mild",E116100,191638008,1,1
+294872017,"mixed bipolar affective disorder, moderate",E116200,191639000,1,1
+294874016,"mixed bipolar affective disorder, severe, with psychosis",E116400,191641004,1,1
+294876019,"mixed bipolar affective disorder, in full remission",E116600,191643001,1,1
+294893019,atypical manic disorder,E11y100,191658009,1,1
+4764391000006115,paranoia,,191667009,1,1
+294913019,paranoid psychosis,E12z.00,191667009,1,1
+294912012,other paranoid states nos,E12yz00,191667009,1,1
+882331000006116,paranoia,E12..99,191667009,1,1
+294910016,other paranoid states,E12y.00,191667009,1,1
+215851000000112,[x]paranoid psychosis,Eu22011,191667009,1,1
+418231000006115,[x]paranoid state,Eu22012,191667009,1,1
+294904016,simple paranoid state,E120.00,191668004,1,1
+294911017,paranoia querulans,E12y000,191672000,1,1
+294917018,reactive depressive psychosis,E130.00,191676002,1,1
+426981000006116,[x]single episode of reactive depressive psychosis,Eu32314,191676002,1,1
+294919015,acute hysterical psychosis,E131.00,191677006,1,1
+367121000006119,"[x]bipolar affective disorder, current episode mixed",Eu31600,192362008,1,1
+398541000006116,"bipolar affective disorder , current episode mixed",Eu3y011,192362008,1,1
+4767311000006117,"bipolar affective disorder, current episode mixed",,192362008,1,1
+2806351000006114,"severe bipolar ii disorder, most recent episode major depressive with psychotic features, mood-congruent",,19300006,0,1
+2808601000006117,opioid induced psychosis with hallucinations,,19445006,0,1
+1974351000006118,"paranoid schizophrenia, continuous",,1974351000006102,0,1
+1974391000006112,"paranoid schizophrenia, episodic with progressive deficit",,1974391000006108,0,1
+1974431000006118,"paranoid schizophrenia, episodic with stable deficit",,1974431000006102,0,1
+1974451000006113,"paranoid schizophrenia, episodic remittent",,1974451000006109,0,1
+1974481000006117,"paranoid schizophrenia, incomplete remission",,1974481000006101,0,1
+1974511000006113,"paranoid schizophrenia, complete remission",,1974511000006109,0,1
+1974541000006112,"paranoid schizophrenia, course uncertain, period of observation too short",,1974541000006108,0,1
+1974601000006111,"hebephrenic schizophrenia, continuous",,1974601000006107,0,1
+1974611000006114,"hebephrenic schizophrenia, episodic with progressive deficit",,1974611000006105,0,1
+1974621000006118,"hebephrenic schizophrenia, episodic with stable deficit",,1974621000006102,0,1
+1974641000006113,"hebephrenic schizophrenia, episodic remittent",,1974641000006109,0,1
+1974671000006117,"hebephrenic schizophrenia, incomplete remission",,1974671000006101,0,1
+1974691000006116,"hebephrenic schizophrenia, complete remission",,1974691000006100,0,1
+1974721000006114,"hebephrenic schizophrenia, course uncertain, period of observation too short",,1974721000006105,0,1
+1974751000006117,"catatonic schizophrenia, continuous",,1974751000006101,0,1
+1974781000006113,"catatonic schizophrenia, episodic with progressive deficit",,1974781000006109,0,1
+1974801000006112,"catatonic schizophrenia, episodic with stable deficit",,1974801000006108,0,1
+1974831000006116,"catatonic schizophrenia, episodic remittent",,1974831000006100,0,1
+1974861000006113,"catatonic schizophrenia, incomplete remission",,1974861000006109,0,1
+1974891000006117,"catatonic schizophrenia, complete remission",,1974891000006101,0,1
+1974921000006111,"catatonic schizophrenia, course uncertain, period of observation too short",,1974921000006107,0,1
+1974951000006119,"undifferentiated schizophrenia, continuous",,1974951000006103,0,1
+1974971000006112,"undifferentiated schizophrenia, episodic with progressive deficit",,1974971000006108,0,1
+1975001000006118,"undifferentiated schizophrenia, episodic with stable deficit",,1975001000006102,0,1
+1975021000006111,"undifferentiated schizophrenia, episodic remittent",,1975021000006107,0,1
+1975051000006119,"undifferentiated schizophrenia, incomplete remission",,1975051000006103,0,1
+1975081000006110,"undifferentiated schizophrenia, complete remission",,1975081000006106,0,1
+1975161000006118,"undifferentiated schizophrenia, course uncertain, period of observation too short",,1975161000006102,0,1
+1975191000006114,"post-schizophrenic depression, continuous",,1975191000006105,0,1
+1975211000006110,"post-schizophrenic depression, episodic with progressive deficit",,1975211000006106,0,1
+1975231000006116,"post-schizophrenic depression, episodic with stable deficit",,1975231000006100,0,1
+1975261000006113,"post-schizophrenic depression, episodic remittent",,1975261000006109,0,1
+1975281000006115,"post-schizophrenic depression, incomplete remission",,1975281000006104,0,1
+1975301000006116,"post-schizophrenic depression, complete remission",,1975301000006100,0,1
+1975321000006114,"post-schizophrenic depression, course uncertain, period of observation too short",,1975321000006105,0,1
+1975351000006117,"residual schizophrenia, continuous",,1975351000006101,0,1
+1975381000006113,"residual schizophrenia, episodic with progressive deficit",,1975381000006109,0,1
+1975401000006113,"residual schizophrenia, episodic with stable deficit",,1975401000006109,0,1
+1975431000006117,"residual schizophrenia, episodic remittent",,1975431000006101,0,1
+1975441000006110,"residual schizophrenia, incomplete remission",,1975441000006106,0,1
+1975471000006119,"residual schizophrenia, complete remission",,1975471000006103,0,1
+1975481000006116,"residual schizophrenia, course uncertain, period of observation too short",,1975481000006100,0,1
+1975491000006118,"simple schizophrenia, continuous",,1975491000006102,0,1
+1975501000006114,"simple schizophrenia, episodic with progressive deficit",,1975501000006105,0,1
+1975521000006116,"simple schizophrenia, episodic with stable deficit",,1975521000006100,0,1
+1975551000006113,"simple schizophrenia, episodic remittent",,1975551000006109,0,1
+1975571000006115,"simple schizophrenia, incomplete remission",,1975571000006104,0,1
+1975601000006110,"simple schizophrenia, complete remission",,1975601000006106,0,1
+1975641000006112,"simple schizophrenia, course uncertain, period of observation too short",,1975641000006108,0,1
+1975681000006118,"acute polymorphic psychot disord with symp of schizophren, without associated acute stress",,1975681000006102,0,1
+1975691000006115,"acute polymorphic psychot disord with symp of schizophren, with associated acute stress",,1975691000006104,0,1
+1975711000006117,"acute schizophrenia-like psychotic disorder, without associated acute stress",,1975711000006101,0,1
+1975731000006111,"acute schizophrenia-like psychotic disorder, with associated acute stress",,1975731000006107,0,1
+1975751000006116,"other schizophrenia, continuous",,1975751000006100,0,1
+1975771000006114,"other schizophrenia, episodic with progressive deficit",,1975771000006105,0,1
+1975801000006111,"other schizophrenia, episodic with stable deficit",,1975801000006107,0,1
+1975831000006115,"other schizophrenia, episodic remittent",,1975831000006104,0,1
+1975841000006113,"other schizophrenia, incomplete remission",,1975841000006109,0,1
+1975881000006119,"other schizophrenia, complete remission",,1975881000006103,0,1
+1975911000006119,"other schizophrenia, course uncertain, period of observation too short",,1975911000006103,0,1
+1975931000006113,"bipolar affect disorder cur epi mild or moderate depressn, without somatic syndrome",,1975931000006109,0,1
+1975941000006115,"bipolar affect disorder cur epi mild or moderate depressn, with somatic syndrome",,1975941000006104,0,1
+1976001000006113,"schizophrenia, unspecified, continuous",,1976001000006109,0,1
+1976061000006114,"schizophrenia, unspecified, episodic with progressive deficit",,1976061000006105,0,1
+1976101000006112,"schizophrenia, unspecified, episodic with stable deficit",,1976101000006108,0,1
+1976121000006119,"schizophrenia, unspecified, episodic remittent",,1976121000006103,0,1
+1976141000006114,"schizophrenia, unspecified, incomplete remission",,1976141000006105,0,1
+1976151000006111,"schizophrenia, unspecified, complete remission",,1976151000006107,0,1
+1976171000006118,"schizophrenia, unspecified, course uncertain, period of observation too short",,1976171000006102,0,1
+1976881000006112,"paranoid schizophrenia, other",,1976881000006108,0,1
+1976891000006110,"hebephrenic schizophrenia, other",,1976891000006106,0,1
+1976901000006114,"catatonic schizophrenia, other",,1976901000006105,0,1
+1976911000006112,"undifferentiated schizophrenia, other",,1976911000006108,0,1
+1976921000006116,"post-schizophrenic depression, other",,1976921000006100,0,1
+1976931000006118,"residual schizophrenia, other",,1976931000006102,0,1
+1976941000006111,"simple schizophrenia, other",,1976941000006107,0,1
+1976951000006113,"other schizophrenia, other",,1976951000006109,0,1
+1976961000006110,"schizophrenia, unspecified, other",,1976961000006106,0,1
+300411000000110,h/o: psychosis,146H.00,198991000000103,0,1
+300931000000113,referral to psychosis early intervention service,8HHs.00,199191000000109,0,1
+996171000006114,"psychosis, schizophrenia and bipolar affective disorder resolved",212T.00,200951000000109,0,1
+2823981000006116,opioid psychosis with delusions,,20385005,0,1
+2833511000006116,"severe bipolar ii disorder, most recent episode major depressive with psychotic features, mood-incongruent",,20960007,0,1
+8009371000006115,phencyclidine psychosis,,21831000119109,0,1
+2848341000006118,"bipolar i disorder, most recent episode depressed with catatonic features",,21900002,0,1
+2852391000006114,"bipolar i disorder, most recent episode depressed, in full remission",,22121000,0,1
+2852381000006111,depressed bipolar i disorder in full remission,,22121000,0,1
+2857081000006110,"bipolar ii disorder, most recent episode major depressive with catatonic features",,22407005,0,1
+4997831000006110,schizophrenic language,,229673004,0,1
+294926015,other reactive psychoses,E13y.00,231437006,1,1
+294929010,other reactive psychoses nos,E13yz00,231437006,1,1
+346896012,reactive psychoses,E13..11,231437006,1,1
+424511000006112,[x]reactive psychosis,Eu23z12,231437006,1,1
+5023391000006116,reactive psychosis,,231437006,1,1
+5023541000006116,psychosis associated with intensive care,,231450007,0,1
+5023551000006119,intensive care psychosis,,231450007,0,1
+5023901000006110,post-schizophrenic depression,,231485007,1,1
+423041000006119,[x]post-schizophrenic depression,Eu20400,231485007,1,1
+394461000006110,[x]involutional paranoid state,Eu22y12,231487004,1,1
+418181000006110,[x]paranoia querulans,Eu22y13,231487004,1,1
+367991000006119,[x]brief reactive psychosis nos,Eu23z11,231489001,1,1
+223601000000119,manic psychosis,E11..13,231494001,1,1
+296118012,[x]other manic episodes,Eu30y00,231494001,1,1
+8011471000006113,severe manic bipolar i disorder,,23741000119105,0,1
+5128631000006110,cutaneous monosymptomatic delusional psychosis,,238972008,1,1
+2885171000006112,bipolaris,,24145000,0,1
+2885181000006110,genus bipolaris,,24145000,0,1
+2885191000006113,bipolaris species,,24145000,0,1
+423271000006116,prepsychotic schizophrenia,Eu21.14,247804008,1,1
+423471000006117,prodromal schizophrenia,Eu21.15,247804008,1,1
+5248961000006113,schizophrenic prodrome,,247804008,1,1
+5387561000006118,bipolar diathermy,,257797008,0,1
+169061000006112,restzustand - schizophrenia,E106.11,26025008,1,1
+424841000006113,[x]residual schizophrenia,Eu20500,26025008,1,1
+424931000006113,[x]restzustand schizophrenic,Eu20512,26025008,1,1
+43595011,residual schizophrenia,E106.00,26025008,1,1
+5435901000006117,bipolar,,260994008,0,1
+7965151000006112,severe depressed bipolar i disorder,,261000119107,0,1
+2919421000006112,"severe depressed bipolar i disorder with psychotic features, mood-incongruent",,26203008,0,1
+2919431000006110,"severe bipolar i disorder, most recent episode depressed with psychotic features, mood-incongruent",,26203008,0,1
+2924901000006115,"severe bipolar disorder with psychotic features, mood-incongruent",,26530004,0,1
+2927881000006111,cannabis psychosis with hallucinations,,26714005,0,1
+401763015,acute schizophrenic episode,E104.00,268617001,1,1
+401765010,"manic disorder, single episode",E110.00,268619003,1,1
+401864017,"[x]manic episode, unspecified",Eu30z00,268619003,1,1
+294809010,"manic disorder, single episode nos",E110z00,268619003,1,1
+396741000006113,[x]manic episode,Eu30.00,268619003,1,1
+294802018,"single manic episode, unspecified",E110000,268619003,1,1
+367151000006111,"[x]bipolar disorder, single manic episode",Eu30.11,268619003,1,1
+401768012,chronic paranoid psychosis,E121.00,268622001,1,1
+5517971000006118,mixed schizophrenic and affective psychosis,,270901009,1,1
+398631000006113,mixed schizophrenic and affective pschosis,Eu25212,270901009,1,1
+376251000006112,[x]cyclic schizophrenia,Eu25211,270901009,1,1
+7965161000006114,severe mixed bipolar i disorder,,271000119101,0,1
+425701000006119,"[x]schizophreniform psychosis, manic type",Eu25012,271428004,1,1
+5524571000006112,"schizophreniform psychosis, manic type",,271428004,1,1
+425571000006119,"[x]schizoaffective psychosis, manic type",Eu25011,271428004,1,1
+2938961000006110,subchronic disorganized schizophrenia,,27387000,0,1
+2938951000006113,subchronic disorganised schizophrenia,,27387000,0,1
+294736018,subchronic hebephrenic schizophrenia,E101100,27387000,0,1
+367951000006113,borderline schizophrenia,Eu21.12,274952002,1,1
+5614121000006115,involutional paranoid state,,278506006,1,1
+425671000006115,[x]schizophrenic reaction,Eu23214,278853003,1,1
+368011000006110,[x]brief schizophrenifrm psych,Eu23212,278853003,1,1
+368001000006112,[x]brief schizophreniform disorder,Eu23211,278853003,1,1
+362421000006113,acute schizophrenia-like psychotic disorder,Eu23200,278853003,1,1
+492761000000114,bipolar affective disorder resolved,212V.00,285491000000101,0,1
+492821000000113,schizophrenia resolved,212W.00,285521000000103,0,1
+492881000000114,psychosis resolved,212X.00,285551000000108,0,1
+2960491000006119,severe manic bipolar i disorder with psychotic features,,28663008,1,1
+2960501000006110,"severe bipolar i disorder, most recent episode manic, with psychotic features",,28663008,1,1
+8089081000006116,psychosis caused by inhalant,,288461000119105,0,1
+8089301000006110,"reactive depressive psychosis, single episode",,288751000119101,0,1
+2964521000006113,"moderate bipolar i disorder, single manic episode",,28884001,0,1
+2976051000006113,chronic undifferentiated schizophrenia,,29599000,0,1
+2981801000006118,"bipolar i disorder, most recent episode depressed with atypical features",,29929003,0,1
+2988481000006116,chronic residual schizophrenia with acute exacerbations,,30336007,0,1
+5933701000006116,"profile of mood states, bipolar",,304757008,0,1
+5933841000006114,rust inventory of schizotypal cognitions,,304767003,0,1
+2991561000006115,"severe bipolar ii disorder, most recent episode major depressive with psychotic features",,30520009,0,1
+2994631000006113,"bipolar ii disorder, most recent episode major depressive with postpartum onset",,30687003,0,1
+376281000006116,cycloid psychosis,Eu23112,307417003,1,1
+376271000006119,[x]cycloid psychosis,Eu23012,307417003,1,1
+2998701000006116,manic bipolar i disorder in full remission,,30935000,0,1
+2998711000006118,"bipolar i disorder, most recent episode manic, in full remission",,30935000,0,1
+423741000006116,[x]pseudopsychopathic schizophrenia,Eu21.17,31027006,1,1
+425731000006110,[x]schizotypal personality disorder,Eu21.18,31027006,1,1
+401856011,schizotypal personality disorder,Eu21.00,31027006,1,1
+423731000006114,[x]pseudoneurotic schizophrenia,Eu21.16,31027006,1,1
+155281000006119,schizotypal personality,E212200,31027006,1,1
+3005061000006111,bipolaris hawaiiense,,31335001,0,1
+3005081000006118,bipolaris hawaiiensis,,31335001,0,1
+3005591000006114,disorganised schizophrenia in remission,,31373002,0,1
+3005601000006118,disorganized schizophrenia in remission,,31373002,0,1
+3005611000006115,"disorganized schizophrenia, in remission",,31373002,0,1
+294740010,hebephrenic schizophrenia in remission,E101500,31373002,0,1
+52897013,chronic paranoid schizophrenia,E103200,31658008,1,1
+3036151000006112,monosymptomatic hypochondriacal psychosis,,33323008,1,1
+3037081000006119,"severe bipolar i disorder, most recent episode manic, with psychotic features, mood-incongruent",,33380008,0,1
+3037071000006117,"severe manic bipolar i disorder with psychotic features, mood-incongruent",,33380008,0,1
+3052571000006110,"bipolar ii disorder, most recent episode major depressive with melancholic features",,34315001,0,1
+3067411000006110,chronic disorganised schizophrenia with acute exacerbations,,35218008,0,1
+3067421000006119,chronic disorganized schizophrenia with acute exacerbations,,35218008,0,1
+294741014,hebephrenic schizophrenia nos,E101z00,35252006,1,1
+378051000006119,[x]disorganised schizophrenia,Eu20111,35252006,1,1
+294735019,unspecified hebephrenic schizophrenia,E101000,35252006,1,1
+819351000006115,hebephrenic schizophrenia,E101.00,35252006,1,1
+3068121000006112,disorganised schizophrenia,,35252006,1,1
+3068131000006110,disorganized schizophrenia,,35252006,1,1
+388741000006110,[x]hebephrenic schizophrenia,Eu20100,35252006,1,1
+2555241000006115,"bipolar 1 disorder, single manic episode, full remission",,3530005,0,1
+2555231000006113,"bipolar i disorder, single manic episode, in full remission",,3530005,0,1
+3071531000006119,"bipolar i disorder, most recent episode mixed, in remission",,35481005,0,1
+3071521000006117,mixed bipolar i disorder in remission,,35481005,0,1
+613791000006115,depressive psychoses,E11..12,35489007,0,1
+3075241000006112,"severe bipolar ii disorder, most recent episode major depressive, in remission",,35722002,0,1
+3077201000006119,"moderate bipolar ii disorder, most recent episode major depressive",,35846004,0,1
+428441000006116,[x]symbiotic psychosis,Eu84314,35919005,0,1
+3082681000006117,schizophreniform disorder with good prognostic features,,36158005,0,1
+396771000006117,"[x] manic-depressive psychosis, depressed type without psychotic symptoms",Eu33213,36474008,0,1
+3089781000006115,mixed bipolar i disorder in partial remission,,36583000,0,1
+3089791000006117,"bipolar i disorder, most recent episode mixed, in partial remission",,36583000,0,1
+6357571000006119,bipolar 1 disorder,,371596008,1,1
+1785851000006110,bipolar i disorder,Eu31800,371596008,1,1
+6357621000006116,severe bipolar i disorder,,371599001,0,1
+6357631000006118,severe bipolar disorder,,371600003,0,1
+6357651000006113,severe bipolar ii disorder,,371604007,0,1
+3118041000006112,"schizoaffective disorder, bipolar type",,38368003,1,1
+6515001000006117,early intervention in psychosis,,390815004,0,1
+6519871000006118,early intervention in psychosis - 24 hour intensive,,391183008,0,1
+6519881000006115,early intervention in psychosis - 24 hour not intensive,,391184002,0,1
+6519891000006117,early intervention in psychosis - part day : day care,,391185001,0,1
+6519901000006118,early intervention in psychosis - daily intensive,,391186000,0,1
+6519911000006115,early intervention in psychosis - 3-5 contacts/week,,391187009,0,1
+6519921000006111,early intervention in psychosis - 1-2 contacts/week,,391188004,0,1
+6519931000006114,early intervention in psychosis - 1-3 contacts/month,,391189007,0,1
+6519941000006116,early intervention in psychosis - <1 contact/month,,391190003,0,1
+6520581000006119,early intervention in psychosis hrgs,,391269001,0,1
+3137271000006116,"undifferentiated schizophrenia, in remission",,39610001,0,1
+3137261000006111,undifferentiated schizophrenia in remission,,39610001,0,1
+1780205015,h/o: manic depressive disorder,146D.00,400998002,0,1
+6647221000006111,history of manic depressive disorder,,400998002,0,1
+3159071000006118,"moderate bipolar i disorder, most recent episode mixed",,40926005,0,1
+3159061000006113,moderate mixed bipolar i disorder,,40926005,0,1
+3169541000006113,"mild bipolar i disorder, single manic episode",,41552001,0,1
+6890801000006117,late onset schizophrenia,,416340002,0,1
+6891981000006111,referral for bipolar disorder,,416422002,0,1
+215871000000115,[x]paranoia,Eu22015,417233008,1,1
+12480451000006112,"[x]schizophrenia, schizotypal and delusional disorders",,417601000000102,1,1
+296022017,"[x]schizophrenia, schizotypal and delusional disorders",Eu2..00,417601000000102,1,1
+3174001000006110,"severe bipolar i disorder, single manic episode with psychotic features",,41832009,0,1
+3174071000006116,"bipolar disorder, full remission",,41836007,0,1
+294887010,bipolar disorder in full remission,E117600,41836007,0,1
+11912191000006111,[v]personal history of schizophrenia,,427491000000103,0,1
+71539017,subchronic catatonic schizophrenia,E102100,42868002,1,1
+1227584015,[v]personal history of manic-depressive psychosis,ZV11112,429124005,0,1
+3201661000006111,"bipolar ii disorder, most recent episode major depressive with atypical features",,43568002,0,1
+3204771000006112,"mild bipolar i disorder, most recent episode mixed",,43769008,0,1
+3204761000006117,mild mixed bipolar i disorder,,43769008,0,1
+294897018,affective psychosis,E11z.00,441704009,1,1
+294898011,unspecified affective psychoses nos,E11z000,441704009,1,1
+294902017,other affective psychosis nos,E11zz00,441704009,1,1
+389451000006110,[x]hysterical psychosis,Eu44.14,44376007,0,1
+82171000006116,severe bipolar disorder with psychotic features,E117400,4441000,1,1
+3233861000006118,"bipolar i disorder, most recent episode manic, in remission",,45479006,0,1
+3233851000006115,manic bipolar i disorder in remission,,45479006,0,1
+362781000006116,[x]affective psychosis nos,Eu3z.11,46206005,0,1
+3246861000006114,"severe bipolar i disorder, most recent episode mixed, without psychotic features",,46229002,0,1
+3246851000006112,severe mixed bipolar i disorder without psychotic features,,46229002,0,1
+7443501000006113,bipolar partial shoulder prosthesis,,467114009,0,1
+11918351000006117,"[x] manic-depressive psychosis, depressed type without psychotic symptoms",,467361000000105,0,1
+7453771000006111,"endotherapy electrosurgical coagulator/cutter, bipolar, reusable",,468330009,0,1
+7456141000006112,"endotherapy electrosurgical coagulator/cutter, bipolar, refurbished",,468608004,0,1
+7461241000006118,humeral head bipolar component,,469222000,0,1
+7467941000006117,femoral head bipolar component,,469999008,0,1
+7472911000006112,"laparoscopic electrosurgical forceps, bipolar",,470560000,0,1
+7488321000006114,atypical psychosis,,473452003,0,1
+12717591000006112,[x] (other nonorganic psychotic disorders) or (chronic hallucinatory psychosis),,480111000000107,0,1
+12759121000006115,[x]chronic hallucinatory psychosis,,480111000000107,0,1
+370981000006112,[x]chronic hallucinatory psychosis,Eu2y.11,480111000000107,0,1
+12759111000006111,[x] chronic hallucinatory psychosis,,480111000000107,0,1
+2577941000006118,"schizophrenia, in remission",,4926007,1,1
+9225016,schizophrenia in remission,E100500,4926007,1,1
+3300541000006111,depressed bipolar i disorder,,49468007,0,1
+3300551000006113,"bipolar i disorder, most recent episode depressed",,49468007,0,1
+513711000006118,depressed bipolar i disorder in partial remission,E115500,49512000,0,1
+3301331000006119,"bipolar i disorder, most recent episode depressed, in partial remission",,49512000,0,1
+3328691000006112,"residual schizophrenia, in remission",,51133006,0,1
+3328681000006114,residual schizophrenia in remission,,51133006,0,1
+3333471000006115,amphetamine psychosis with hallucinations,,51443000,0,1
+3336841000006115,"chronic bipolar i disorder, most recent episode depressed",,51637008,0,1
+82151000006114,severe bipolar disorder without psychotic features,E117300,53049002,0,1
+3369281000006111,depressed bipolar i disorder in remission,,53607008,1,1
+3369291000006114,"bipolar i disorder, most recent episode depressed, in remission",,53607008,1,1
+3385511000006118,witigo psychosis,,54560009,0,1
+10122017,brief reactive psychosis,E13y100,5464005,1,1
+3388771000006112,"severe bipolar i disorder, most recent episode depressed with psychotic feature, mood-congruent",,54761006,0,1
+3388761000006117,"severe depressed bipolar i disorder with psychotic features, mood-congruent",,54761006,0,1
+3401501000006110,"bipolar i disorder, most recent episode manic with postpartum onset",,55516002,0,1
+3405421000006118,schizophreniform disorder without good prognostic features,,55736003,0,1
+3417321000006119,infection by bipolaris hawaiiense,,56460009,0,1
+3417351000006111,infection caused by bipolaris hawaiiense,,56460009,0,1
+2590511000006116,"bipolar disorder, partial remission",,5703000,0,1
+82091000006116,bipolar disorder in partial remission,E117500,5703000,0,1
+294728010,unspecified schizophrenia,E100000,58214004,1,1
+401855010,[x]other schizophrenia,Eu20y00,58214004,1,1
+425711000006116,[x]schizophrenifrm psychos nos,Eu20y13,58214004,1,1
+425601000006114,[x]schizophrenia,Eu20.00,58214004,1,1
+294790014,schizophrenia,E10z.00,58214004,1,1
+296040018,"[x]schizophrenia, unspecified",Eu20z00,58214004,1,1
+294789017,other schizophrenia nos,E10yz00,58214004,1,1
+370631000006117,[x]cenesthopathic schizophrenia,Eu20y11,58214004,1,1
+401764014,other schizophrenia,E10y.00,58214004,1,1
+425681000006117,[x]schizophreniform disord nos,Eu20y12,58214004,1,1
+3468381000006118,severe depressed bipolar i disorder with psychotic features,,59617007,0,1
+3468391000006115,"severe bipolar i disorder, most recent episode depressed with psychotic features",,59617007,0,1
+3515942013,postpartum psychosis in remission,,60401000119104,0,1
+3497641000006117,"severe bipolar i disorder, most recent episode depressed without psychotic features",,61403008,1,1
+367051000006112,severe depressed bipolar i disorder without psychotic features,Eu31400,61403008,1,1
+513731000006112,"bipolar affect disord, now depressed, severe, no psychosis",E115300,61403008,1,1
+8019691000006113,"bipolar ii disorder, most recent episode rapid cycling",,61771000119106,0,1
+8019701000006113,"bipolar 2 disorder, most recent episode rapid cycling",,61771000119106,0,1
+3504761000006111,symbiotic psychosis,,61831009,1,1
+3504751000006114,induced psychosis,,61831009,1,1
+3527411000006119,"paranoid schizophrenia, in remission",,63181006,1,1
+105029017,paranoid schizophrenia in remission,E103500,63181006,1,1
+3528681000006111,"bipolar i disorder, most recent episode manic, in partial remission",,63249007,1,1
+513741000006119,manic bipolar i disorder in partial remission,E114500,63249007,1,1
+2601091000006116,cocaine induced psychosis with hallucinations,,6348008,0,1
+3540391000006118,inhalant induced psychosis with hallucinations,,63983005,0,1
+3552851000006118,"severe bipolar i disorder, most recent episode mixed, with psychotic features, mood-congruent",,64731001,0,1
+3552841000006115,"severe mixed bipolar i disorder with psychotic features, mood-congruent",,64731001,0,1
+418261000006112,[x]paraphrenic schizophrenia,Eu20011,64905009,1,1
+107878010,paranoid schizophrenia,E103.00,64905009,1,1
+294754019,unspecified paranoid schizophrenia,E103000,64905009,1,1
+294760019,paranoid schizophrenia nos,E103z00,64905009,1,1
+418221000006118,[x]paranoid schizophrenia,Eu20000,64905009,1,1
+3555731000006114,paraphrenic schizophrenia,,64905009,1,1
+3557751000006110,"bipolar i disorder, most recent episode mixed with postpartum onset",,65042007,0,1
+3583611000006115,moderate depressed bipolar i disorder,,66631006,0,1
+3583621000006111,"moderate bipolar i disorder, most recent episode depressed",,66631006,0,1
+3589421000006110,"severe bipolar ii disorder, most recent episode major depressive, in partial remission",,67002003,0,1
+3615761000006116,manic bipolar i disorder,,68569003,0,1
+3615771000006111,"bipolar i disorder, most recent episode manic",,68569003,0,1
+425551000006112,[x]schizoaffective psychosis nos,Eu25z11,68890003,1,1
+114616017,chronic catatonic schizophrenia,E102200,68995007,1,1
+3627341000006115,psychosis,,69322001,1,1
+7538311000006116,planar-resection electrosurgical diathermy bipolar conducting unit,,700739009,0,1
+7548121000006114,"universal electrosurgical diathermy system bipolar electrode, reprocessed",,701439000,0,1
+7548151000006117,"universal electrosurgical diathermy system bipolar electrode, single-use",,701442006,0,1
+12358661000006114,x-linked intellectual disability-psychosis-macroorchidism syndrome,,702356009,0,1
+7558781000006111,"ppmx - mental retardation with psychosis, pyramidal signs, and macroorchidism",,702356009,0,1
+2611981000006118,subchronic undifferentiated schizophrenia with acute exacerbations,,7025000,0,1
+7567101000006113,bipolar clinic,,702826007,0,1
+7568231000006110,schizophrenia clinic,,702919008,0,1
+3647231000006119,"severe bipolar disorder with psychotic features, mood-congruent",,70546001,0,1
+3651771000006116,subchronic residual schizophrenia with acute exacerbations,,70814008,0,1
+3656651000006111,chronic residual schizophrenia,,71103003,0,1
+362391000006117,acute polymorphic psychotic disorder without symptoms of schizophrenia,Eu23000,712824002,1,1
+367971000006115,[x]bouffee delirante with symptoms of schizophrenia,Eu23111,712850003,1,1
+7696261000006113,acute polymorphic psychotic disorder with symptoms of schizophrenia,,712850003,1,1
+362381000006115,acute polymorphic psychotic disorder co-occurrent with symptoms of schizophrenia,Eu23100,712850003,1,1
+3659701000006111,"mild bipolar ii disorder, most recent episode major depressive",,71294008,0,1
+7707781000006115,partial hip replacement with bipolar prosthesis,,713686009,0,1
+7756771000006110,"endoscopic electrosurgical electrode, bipolar, reprocessed",,717116004,0,1
+7756991000006113,"endoscopic electrosurgical electrode, bipolar, reusable",,717132001,0,1
+7757001000006117,"endoscopic electrosurgical electrode, bipolar, single-use",,717133006,0,1
+7757081000006114,"percutaneous electrosurgical probe, spinal-denervation, bipolar",,717140007,0,1
+7760691000006114,bipolaris cynodontis,,717666006,0,1
+7767871000006111,"laparoscopic electrosurgical forceps, bipolar, reprocessed",,718121003,0,1
+7790241000006117,psychosis co-occurrent and due to parkinson's disease,,719717006,0,1
+3671041000006111,mild manic bipolar i disorder,,71984005,0,1
+3671051000006113,"mild bipolar i disorder, most recent episode manic",,71984005,0,1
+3672261000006113,bipolar cells of retina,,72060002,0,1
+7822921000006111,provision of information about psychosis,,721775007,0,1
+7826381000006113,hysteroscopic bipolar electrosurgical excision of uterine fibroid,,722022003,0,1
+7849081000006116,bipolar type i disorder currently in full remission,,723903001,0,1
+7849091000006118,bipolar type ii disorder currently in full remission,,723905008,0,1
+7860831000006112,manic symptoms with primary psychotic disorder,,724758000,0,1
+7860821000006114,manic symptoms co-occurrent and due to primary psychotic disorder,,724758000,0,1
+7880861000006118,h/o: postpartum psychosis,,726623007,0,1
+7880871000006113,history of postpartum psychosis,,726623007,0,1
+3690811000006118,destruction of lesion or structure by biterminal bipolar fulguration,,73223003,0,1
+3694651000006113,"bipolar i disorder, most recent episode mixed with catatonic features",,73471000,0,1
+3515352015,cocaine-induced psychotic disorder with schizophreniform symptoms,,735750005,0,1
+3515351010,psychotic disorder with schizophreniform symptoms caused by cocaine,,735750005,0,1
+3526134018,bipolaris sorokiniana,,736989002,0,1
+3532400017,bipolaris cactivora,,738459006,0,1
+3713851000006119,"mild bipolar i disorder, most recent episode depressed",,74686005,0,1
+3713841000006116,mild depressed bipolar i disorder,,74686005,0,1
+3721561000006114,inhalant induced psychosis with delusions,,75122001,0,1
+3725441000006111,"bipolar 1 disorder, single manic episode, in remission",,75360000,0,1
+3725431000006118,"bipolar i disorder, single manic episode, in remission",,75360000,0,1
+1667581000000114,[x]paranoid state in remission,Eu22300,755301000000102,1,1
+8232521000006119,paranoid state in remission,,755301000000102,1,1
+1667591000000111,[x]nonorganic psychosis in remission,Eu26.00,755311000000100,1,1
+8232541000006114,non-organic psychosis in remission,,755311000000100,1,1
+8232571000006118,"single major depressive episode, severe, with psychosis, psychosis in remission",,755321000000106,1,1
+1755901000006112,"[x]single major depressive episode, severe, with psychosis, psychosis in remission",Eu32900,755321000000106,1,1
+1755911000006110,"[x]recurrent major depressive episodes, severe, with psychosis, psychosis in remission",Eu32A00,755331000000108,1,1
+8232591000006117,"recurrent major depressive episodes, severe, with psychosis, psychosis in remission",,755331000000108,1,1
+3731661000006112,"bipolar i disorder, most recent episode depressed with melancholic features",,75752004,0,1
+701051000006118,"mixed bipolar affective disorder, partial/unspec remission",E116500,760721000000109,0,1
+8235161000006110,"mixed bipolar affective disorder, in partial remission",,760721000000109,0,1
+3636801010,synthetic cathinone-induced psychotic disorder with schizophreniform symptoms,,762510005,0,1
+3636803013,psychotic disorder with schizophreniform symptoms caused by synthetic cathinone,,762510005,0,1
+12005681000006116,robotic reusable bipolar electrosurgical instrument,,763488001,0,1
+12005691000006118,robotic single-use bipolar electrosurgical instrument,,763489009,0,1
+701071000006111,"mixed bipolar affective disorder, severe",E116300,764591000000108,0,1
+182871000006115,"recurrent manic episodes, severe",E111300,764621000000106,0,1
+294805016,"single manic episode, severe",E110300,764641000000104,0,1
+182861000006110,"recurrent manic episodes, in partial remission",E111500,764671000000105,0,1
+8237821000006118,"recurrent manic episodes, in remission",,764681000000107,0,1
+294807012,single manic episode in partial remission,E110500,764731000000103,0,1
+8237871000006117,single manic episode in remission,,764741000000107,0,1
+513721000006114,"bipolar affect disord, now depressed, severe with psychosis",E115400,765176007,0,1
+396781000006119,"[x]manic-depress psychosis,depressed type+psychotic symptoms",Eu33312,765176007,0,1
+367061000006114,psychosis and severe depression co-occurrent and due to bipolar affective disorder,Eu31500,765176007,0,1
+3745281000006119,subchronic residual schizophrenia,,76566000,0,1
+12059201000006117,"bipolar disorder, most recent episode depression",,767631007,0,1
+12059211000006119,"bipolar disorder, most recent episode manic",,767632000,0,1
+12059221000006110,"bipolar affective disorder, most recent episode mixed",,767633005,0,1
+12059241000006115,"bipolar i disorder, most recent episode manic",,767635003,0,1
+12059251000006118,"bipolar i disorder, most recent episode depression",,767636002,0,1
+3773111000006115,"bipolar 1 disorder, single manic episode, in partial remission",,78269000,0,1
+3773101000006118,"bipolar i disorder, single manic episode, in partial remission",,78269000,0,1
+3779041000006118,"severe manic bipolar i disorder with psychotic features, mood-congruent",,78640000,0,1
+3779051000006116,"severe bipolar i disorder, most recent episode manic, with psychotic features, mood-congruent",,78640000,0,1
+3788101000006118,chronic undifferentiated schizophrenia with acute exacerbations,,79204003,0,1
+294883014,moderate bipolar disorder,E117200,79584002,0,1
+132503015,subchronic paranoid schizophrenia,E103100,79866005,1,1
+3816191000006113,bipolaris australiensis,,80923003,0,1
+3822471000006114,"severe bipolar ii disorder, most recent episode major depressive without psychotic features",,81319007,0,1
+3850471000006114,moderate manic bipolar i disorder,,82998009,0,1
+3850481000006112,"moderate bipolar i disorder, most recent episode manic",,82998009,0,1
+367161000006113,[x]bipolar ii disorder,Eu31y11,83225003,1,1
+3854401000006113,bipolar 2 disorder,,83225003,1,1
+1785871000006117,[x]bipolar ii disorder,Eu31911,83225003,1,1
+1785861000006112,bipolar ii disorder,Eu31900,83225003,1,1
+3862661000006112,chronic schizophrenia,,83746006,1,1
+1234861017,chronic schizophrenic,E100200,83746006,1,1
+3878611000006116,"schizophreniform psychosis, depressive type",,84760002,1,1
+425561000006114,"[x]schizoaffective psychosis, depressive type",Eu25111,84760002,1,1
+425691000006119,"[x]schizophreniform psychosis, depressive type",Eu25112,84760002,1,1
+3886291000006119,"bipolar disorder, in remission",,85248005,1,1
+296130018,bipolar disorder in remission,Eu31700,85248005,1,1
+3895621000006112,subchronic undifferentiated schizophrenia,,85861002,0,1
+3898991000006114,"severe bipolar i disorder, single manic episode with psychotic features, mood-incongruent",,86058007,0,1
+8302181000006114,hysteroscopic bipolar electrosurgical excision of uterine polyp,,869241000000100,0,1
+3917861000006119,"bipolar i disorder, most recent episode depressed with postpartum onset",,87203005,0,1
+3929161000006110,"bipolar i disorder, single manic episode with catatonic features",,87950005,0,1
+3933581000006112,bipolaris spicifera,,88228004,0,1
+3946141000006118,schizophreniform disorder,,88975006,1,1
+8028531000006112,early intervention in psychosis team,,92191000000105,0,1
+2648981000006119,"bipolar i disorder, single manic episode",,9340000,0,1
+2648991000006116,"bipolar 1 disorder, single manic episode",,9340000,0,1
+397661000006117,opioid-induced psychosis,Eu11500,943071000000104,0,1
+397581000006111,cannabis-induced psychosis,Eu12500,943081000000102,0,1
+397641000006116,cocaine-induced psychosis,Eu14500,943101000000108,0,1
+8342781000006115,psychoactive substance-induced psychosis,,943121000000104,0,1
+397691000006113,volatile inhalant-induced psychosis,Eu18500,943151000000109,0,1
+8365411000006116,family intervention for psychosis,,985451000000105,0,1
+8369811000006116,early intervention in psychosis procedures simple reference set,,991311000000100,0,1
