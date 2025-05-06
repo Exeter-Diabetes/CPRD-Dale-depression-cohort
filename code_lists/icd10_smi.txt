@@ -1,0 +1,51 @@
+CODE	DESCRIPTION
+F20	Schizophrenia
+F20.0	Paranoid schizophrenia
+F20.1	Hebephrenic schizophrenia
+F20.2	Catatonic schizophrenia
+F20.3	Undifferentiated schizophrenia
+F20.4	Post-schizophrenic depression
+F20.5	Residual schizophrenia
+F20.6	Simple schizophrenia
+F20.8	Other schizophrenia
+F20.9	Schizophrenia, unspecified
+F21	Schizotypal disorder
+F22	Persistent delusional disorders
+F22.0	Delusional disorder
+F22.8	Other persistent delusional disorders
+F22.9	Persistent delusional disorder, unspecified
+F23	Acute and transient psychotic disorders
+F23.0	Acute polymorphic psychotic disorder without symptoms of schizophrenia
+F23.1	Acute polymorphic psychotic disorder with symptoms of schizophrenia
+F23.2	Acute schizophrenia-like psychotic disorder
+F23.3	Other acute predominantly delusional psychotic disorders
+F23.8	Other acute and transient psychotic disorders
+F23.9	Acute and transient psychotic disorder, unspecified
+F24	Induced delusional disorder
+F25	Schizoaffective disorders
+F25.0	Schizoaffective disorder, manic type
+F25.1	Schizoaffective disorder, depressive type
+F25.2	Schizoaffective disorder, mixed type
+F25.8	Other schizoaffective disorders
+F25.9	Schizoaffective disorder, unspecified
+F28	Other nonorganic psychotic disorders
+F29	Unspecified nonorganic psychosis
+F30	Manic episode
+F30.0	Hypomania
+F30.1	Mania without psychotic symptoms
+F30.2	Mania with psychotic symptoms
+F30.8	Other manic episodes
+F30.9	Manic episode, unspecified
+F31	Bipolar affective disorder
+F31.0	Bipolar affective disorder, current episode hypomanic
+F31.1	Bipolar affective disorder, current episode manic without psychotic symptoms
+F31.2	Bipolar affective disorder, current episode manic with psychotic symptoms
+F31.3	Bipolar affective disorder, current episode mild or moderate depression
+F31.4	Bipolar affective disorder, current episode severe depression without psychotic symptoms
+F31.5	Bipolar affective disorder, current episode severe depression with psychotic symptoms
+F31.6	Bipolar affective disorder, current episode mixed
+F31.7	Bipolar affective disorder, currently in remission
+F31.8	Other bipolar affective disorders
+F31.9	Bipolar affective disorder, unspecified
+F32.3	Severe depressive episode with psychotic symptoms
+F33.3	Recurrent depressive disorder, current episode severe with psychotic symptoms
