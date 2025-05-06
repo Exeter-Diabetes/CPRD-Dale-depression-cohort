@@ -2,9 +2,9 @@
 WORK IN PROGRESS
 
 To add: 
-  -Depression and biomarker code lists
-  -Further QC steps to flow chart
-  -Upload latest scripts
+  - Depression and biomarker code lists
+  - Further QC steps to flow chart
+  - Upload latest scripts
   
 
 ## Cohort definition
