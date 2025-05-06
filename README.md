@@ -1,5 +1,6 @@
 # CPRD depression cohort
-WORK IN PROGRESS \n
+WORK IN PROGRESS
+
 To add: 
   -Depression and biomarker code lists
   -Further QC steps to flow chart
