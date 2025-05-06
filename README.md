@@ -3,7 +3,7 @@ WORK IN PROGRESS
 
 
 ## Cohort definition
-The cohort is defined using several the following criteria:
+The cohort is defined using the following criteria:
 
 **Inclusion:**
   - A Quality Outcome Framework code for depression
