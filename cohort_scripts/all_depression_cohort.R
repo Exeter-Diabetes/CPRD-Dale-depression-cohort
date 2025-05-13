@@ -13,12 +13,8 @@ rm(list = ls())
 ####Connection and code lists####
 #Open connection
 #Connect to the MySQL database
-cprdenvname <- "CPRD_depression_data"
-yaml <- "C:/Users/dhand/.ssh/.aurum.yaml"
-
-
-cprdenvname <- "analysis"
-yaml <- "~/.aurum.yaml"
+cprdenvname <- ""
+yaml <- ""
 
 
 #open connection and get codes sets
