@@ -13,13 +13,8 @@ rm(list = ls())
 ####Connection and code lists####
 #Open connection
 #Connect to the MySQL database
-cprdenvname <- "CPRD_depression_data"
-yaml <- "C:/Users/dhand/.ssh/.aurum.yaml"
-
-
-cprdenvname <- "analysis"
-yaml <- "~/.aurum.yaml"
-
+cprdenvname <- "<NAME OF CPRD ENVIRONMENT IN YOUR YAML>"
+yaml <- "<YOUR YAML DIRECTORY>"
 
 #open connection and get codes sets
 cprd = CPRDData$new(cprdEnv = cprdenvname, cprdConf = yaml)
