@@ -13,8 +13,12 @@ rm(list = ls())
 ####Connection and code lists####
 #Open connection
 #Connect to the MySQL database
-cprdenvname <- ""
-yaml <- ""
+cprdenvname <- "CPRD_depression_data"
+yaml <- "C:/Users/dhand/.ssh/.aurum.yaml"
+
+
+cprdenvname <- "analysis"
+yaml <- "~/.aurum.yaml"
 
 
 #open connection and get codes sets
@@ -307,4 +311,49 @@ dob <- cprd$tables$observation %>%
   summarise(earliest_medcode=min(obsdate, na.rm=TRUE)) %>%
   ungroup() %>%
   analysis$cached("earliest_medcode", unique_indexes="patid")
-  
+
+
+#The code below this point hasn't been run yet.
+#This is because the step above has taken forever to run (joins a 3.7b row table with a 3.9m row table)
+#Therefore, the code below is subject to changes when I invariably find errors in it.
+
+#Check how many people have a count:
+dob %>% count() # should be everyone in the db. 
+
+#Join DOB with the patient file and figure out their realistic date of birth. 
+dob <- dob %>%
+  inner_join(cprd$tables$patient, by="patid") %>%
+  mutate(dob=as.Date(ifelse(is.na(mob), paste0(yob,"-06-30"), paste0(yob, "-",mob,"-15")))) %>%
+  inner_join(cprd$tables$validDateLookup, by = "patid") %>%
+  mutate(dob=pmin(dob, earliest_medcode, na.rm=TRUE)) %>%
+  mutate(dob=ifelse(regstartdate>=min_dob & regstartdate<dob, regstartdate, dob)) %>%
+  select(patid, dob = dob, mob, yob, regstartdate) %>%
+  analysis$cached("dob", unique_indexes="patid")
+
+#Now we have a date of birth, we can calculate age at depression diagnosis.
+#No exclusion here; a column to indicate whether individuals
+#Also add where registration start date was before the diagnosis date - used
+#For filtering later on.
+analysis <- cprd$analysis("dh")
+
+#Create the date of depression age table.
+depression_diag_age <- first_date_depbroad_code %>%
+  left_join(dob, by="patid") %>%
+  mutate(depression_diag_age_all=(datediff(depression_diag_date_all, dob))/365.25,
+         depression_diag_before_reg=depression_diag_date_all<regstartdate, 
+         depression_diag_under18yo = ifelse(depression_diag_age_all >= 18,1,0)) %>%
+  select(patid, dob, mob, yob, regstartdate, starts_with("depression_diag")) %>%
+  analysis$cached("depression_diag_age", unique_indexes="patid", indexes=c("depression_diag_date_all", "depression_diag_age_all"))
+
+#When the VPN comes back online, merge together:
+#Age at depression diagnosis
+#Sex
+#Depression inclusion criteria
+#severe mental illness dates.
+#Registration start date
+#Death date
+#Earliest censoring date
+#Ethnicity
+#Smoking status
+#Alcohol use status
+#Patient-level index of multiple deprivation (maybe?).
