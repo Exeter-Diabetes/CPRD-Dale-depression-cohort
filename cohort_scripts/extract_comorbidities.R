@@ -1,3 +1,7 @@
+#In this code, we use the older comorbidity code lists, as these will match up with
+#The DM cohort that goes along with the T2D cohort.
+
+
 library(tidyverse)
 library(aurum)
 rm(list=ls())
