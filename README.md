@@ -24,10 +24,7 @@ The cohort is defined using the following criteria:
 
 ```mermaid
 graph TD;
-    A["<b>CPRD Aurum December 2023 release</b> with linked November 2023 HES APC, and patient IMD"] --> |"Unique patients with a depression-related medcode between 1988 - 30/12/2023"| B["<b>Our extract</b>: n=3,984,014"] -->  C["<b>With a valid "broad depression code </b>: n=3,581,691]
-"]
-    
-
+    A["<b>CPRD Aurum December 2023 release</b> with linked November 2023 HES APC, and patient IMD"] --> |"Unique patients with a depression-related medcode between 1988 - 30/12/2023"| B["<b>Our extract</b>: n=3,984,014"] -->  C["<b>With a valid "broad depression code </b>: n=3,581,691"]
 ```
     B -->|"Patient from one of 44 practices which may have merged (recommended to remove in CPRD Aurum Data Specification v3.4)"|C["n=48,912"]
     B -->|"Patients with gender==3 (indeterminate)"|D["n=348"]
