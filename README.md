@@ -28,7 +28,3 @@ graph TD;
     B["<b>Our extract</b>: n = 3,984,014"] --> 
     C["<b>With a valid 'broad depression' code</b>: n = 3,581,691"]
 ```
-    B -->|"Patient from one of 44 practices which may have merged (recommended to remove in CPRD Aurum Data Specification v3.4)"|C["n=48,912"]
-    B -->|"Patients with gender==3 (indeterminate)"|D["n=348"]
-    B --> E["n=3,934,754"]
-    E -->|"With a depression QOF code with a valid date"|F["n=3,376,433"]
