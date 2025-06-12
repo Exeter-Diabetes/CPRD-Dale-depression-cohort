@@ -13,8 +13,8 @@ rm(list = ls())
 ####Connection and code lists####
 #Open connection
 #Connect to the MySQL database
-cprdenvname <- "<NAME OF CPRD ENVIRONMENT IN YOUR YAML>"
-yaml <- "<YOUR YAML DIRECTORY>"
+cprdenvname <- "CPRD_depression_data"
+yaml <- "C:/Users/dhand/.ssh/.aurum.yaml"
 
 #open connection and get codes sets
 cprd = CPRDData$new(cprdEnv = cprdenvname, cprdConf = yaml)
@@ -247,7 +247,6 @@ tmp_data_qof <- tmp_data %>% left_join(qof_dep %>% mutate(qof_depression = 1), b
     mutate(qof_depression = coalesce(qof_depression, 0)) %>% analysis$cached("depression_cohort_interim_2")
 
 
-
 tmp_data_qof %>% filter(preexisting == 1) %>% count() 
 #593018 People (~15%) have evidence of Depression pre-existing their diagnosis date. 
 
@@ -325,30 +324,182 @@ dob <- dob %>%
   select(patid, dob = dob, mob, yob, regstartdate) %>%
   analysis$cached("dob", unique_indexes="patid")
 
-#Now we have a date of birth, we can calculate age at depression diagnosis.
-#No exclusion here; a column to indicate whether individuals
-#Also add where registration start date was before the diagnosis date - used
+#Define depression diagnosis age based on the columns provided in the data frame.
 #For filtering later on.
 analysis <- cprd$analysis("dh")
 
-#Create the date of depression age table.
-depression_diag_age <- first_date_depbroad_code %>%
-  left_join(dob, by="patid") %>%
-  mutate(depression_diag_age_all=(datediff(depression_diag_date_all, dob))/365.25,
-         depression_diag_before_reg=depression_diag_date_all<regstartdate, 
-         depression_diag_under18yo = ifelse(depression_diag_age_all >= 18,1,0)) %>%
-  select(patid, dob, mob, yob, regstartdate, starts_with("depression_diag")) %>%
-  analysis$cached("depression_diag_age", unique_indexes="patid", indexes=c("depression_diag_date_all", "depression_diag_age_all"))
 
-#When the VPN comes back online, merge together:
-#Age at depression diagnosis
-#Sex
-#Depression inclusion criteria
-#severe mental illness dates.
-#Registration start date
-#Death date
-#Earliest censoring date
-#Ethnicity
-#Smoking status
-#Alcohol use status
-#Patient-level index of multiple deprivation (maybe?).
+dep_diag_age <- first_date_depbroad_code %>%
+  left_join(dob, by="patid") %>%
+  mutate(depression_diag_age_all = (datediff(depbroad_diag_date, dob))/365.25,
+         depression_diag_before_reg= depbroad_diag_date<regstartdate, 
+         depression_diag_under18yo = ifelse(depression_diag_age_all < 18.0, 1, 0)) %>%
+  select(patid, dob, mob, yob, regstartdate, depbroad_diag_date, starts_with("depression_diag")) %>%
+  analysis$cached("depression_diag_age", unique_indexes="patid", indexes=c("depbroad_diag_date", "depression_diag_age_all"))
+
+#dep_diag_age %>% count() #3581691
+#dep_diag_age %>% filter(!is.na(dob)) %>% count() #3581691 No one with missing dob. 
+
+analysis <- cprd$analysis("all_patid")
+dep_diag_age <- dep_diag_age %>% analysis$cached("depression_diag_age")
+
+analysis <- cprd$analysis("dh")
+depression_cohort_tmp <- depression_cohort_tmp %>% analysis$cached("depression_cohort_interim_3")
+
+dep_diag_age %>% inner_join(depression_cohort_tmp, by = c("patid", "depbroad_diag_date")) %>% count() #3,581,691 - all still there even after merge.. good!
+
+#Now full registered time is calculated. 
+dep_cohort_interim_4 <- dep_diag_age %>% inner_join(depression_cohort_tmp, by = c("patid", "depbroad_diag_date")) %>% 
+  mutate(days_registered_current_gp = datediff(depbroad_diag_date, regstartdate), 
+         registered_current_gp_90 = ifelse(days_registered_current_gp > 90, 1, 0)) %>%
+  analysis$cached("depression_cohort_interim_4")
+
+
+#Add relevant phenotypes:
+#Practice exclusion, gender exclusion, 
+#Age at diagnosis, sex, IMD, ethnicity, hes linkage.
+
+#Load:
+# - Practice exclusions
+# - Gender exclusions
+# - Death end date
+# - Ethnicity
+analysis <- cprd$analysis("all_patid")
+valid_dates <- valid_dates %>% analysis$cached("death_end_dat")
+practice_exclusion_ids <- practice_exclusion_ids %>% analysis$cached("practice_exclusion_ids")
+gender_exclusion_ids <- gender_exclusion_ids %>% analysis$cached("gender_exclusion_ids")
+ethnicity <- ethnicity %>% analysis$cached("ethnicity")
+
+analysis <- cprd$analysis("all_patid")
+dep_cohort_interim_5 <- dep_cohort_interim_5 %>% analysis$cached("dep_cohort_interim_5")
+
+dep_cohort_interim_5 <- dep_cohort_interim_4 %>% 
+  left_join((cprd$tables$patient %>% select(patid, gender, regenddate, pracid)), by="patid") %>%
+  left_join((cprd$tables$practice %>% select(pracid, lcd, region)), by="pracid") %>%
+  left_join(valid_dates %>% select(patid, cprd_ddate, cprd_ddate, gp_end_date, gp_death_end_date), by = "patid") %>%
+  left_join((cprd$tables$patientImd %>% select(patid, imd_decile)), by="patid") %>% 
+  left_join((cprd$tables$patidsWithLinkage %>% mutate(with_hes=1L) %>% select(patid, with_hes)), by="patid") %>%
+  mutate(with_hes=ifelse(is.na(with_hes), 0L, 1L)) %>%
+  left_join(ethnicity, by="patid") %>% 
+  left_join(gender_exclusion_ids %>% select(patid) %>% mutate(valid_gender = 0L), by = "patid") %>%
+  mutate(valid_gender = ifelse(is.na(valid_gender), 1L, 0L)) %>% 
+  left_join(practice_exclusion_ids %>% select(patid) %>% mutate(valid_practice = 0L), by = "patid") %>%
+  mutate(valid_practice = ifelse(is.na(valid_practice), 1L, 0L)) %>%
+  analysis$cached("dep_cohort_interim_5")
+
+#Add in SMI with the relevant columns - what else is missing? nothing really
+analysis <- cprd$analysis("all_patid")
+smi_exclusions <- smi_exclusions %>% analysis$cached("smi_exclusion_ids")
+smi_censoring <- smi_censoring %>% analysis$cached("incident_smi_censoring_dates")
+
+dep_cohort_interim_6 <- dep_cohort_interim_5 %>% left_join(smi_exclusions %>% mutate(preexisting_smi = 1L)) %>%
+  mutate(preexisting_smi =ifelse(preexisting_smi == 1L, 1L, 0L)) %>% left_join(smi_censoring %>% mutate(incident_smi = 1L)) %>% 
+  mutate(incident_smi = ifelse(incident_smi == 1, 1, 0)) %>% rename(incident_smi_date = smi_date) %>% 
+  mutate(diagnosed_after_QOF = depbroad_diag_date >= "2006-04-01") %>% analysis$cached("dep_cohort_interim_6")
+
+dep_cohort_interim_7 <- dep_cohort_interim_6 %>% select(patid, dob, gender, ethnicity_5cat, ethnicity_16cat, regstartdate, regenddate, gp_end_date, cprd_ddate, gp_death_end_date, 
+                                                        index_date = depbroad_diag_date, depression_diag_age = depression_diag_age_all, 
+                                                        depression_diag_before_reg, depression_diag_under18yo, diagdepb_code_first, dephist_cat_first, 
+                                                        dephist_add_codes, preexisting, qof_depression, days_registered_current_gp, registered_current_gp_90, imd_decile, with_hes, 
+                                                        valid_practice, valid_gender, preexisting_smi, incident_smi, incident_smi_date, diagnosed_after_QOF) %>%
+                                                        analysis$cached("dep_cohort_interim_7")
+
+
+#Load the data
+analysis <- cprd$analysis("dh")
+dep_cohort_interim_7 <- dep_cohort_interim_7 %>% analysis$cached("dep_cohort_interim_7")
+smoking <- smoking %>% analysis$cached("smoking")
+alcohol <- alcohol %>% analysis$cached("alcohol")
+
+#Add the smoking and depression data
+full_dep_cohort <- dep_cohort_interim_7 %>% 
+  left_join(alcohol %>% select(patid, alcohol_cat), by = "patid") %>%
+  left_join(smoking %>% select(patid, smoking_cat, qrisk2_smoking_cat)) %>%
+  analysis$cached("full_depression_cohort", indexes = c("patid"))
+
+
+#Now we start filtering down according to Katie's
+
+
+cprd$tables$patient %>% count() #3,984,014 - total patient count in download
+
+#Valid dep code
+dep_cohort_interim_7 %>% count() # 3,581,691
+
+#Valid practice
+dep_cohort_interim_7 %>% filter(valid_practice == 1) %>% count() #3,539,388
+
+#Valid gender
+dep_cohort_interim_7 %>% filter(valid_practice == 1) %>% filter(valid_gender == 1) %>% count() #3,539,067
+
+#Any QOF depression
+dep_cohort_interim_7 %>% filter(valid_practice == 1) %>% 
+  filter(valid_gender == 1) %>% filter(qof_depression == 1) %>% count() #3,376,433
+
+#with clear date
+dep_cohort_interim_7 %>% filter(valid_practice == 1) %>% 
+  filter(valid_gender == 1) %>% filter(qof_depression == 1) %>% 
+  filter(preexisting == 0) %>% count() #2,861,757
+
+dep_cohort_interim_7 %>% filter(valid_practice == 1) %>% 
+  filter(valid_gender == 1) %>% filter(qof_depression == 1) %>% 
+  filter(preexisting == 0) %>% count() #2,861,757
+
+dep_cohort_interim_7 %>% filter(valid_practice == 1) %>% 
+  filter(valid_gender == 1) %>% filter(qof_depression == 1) %>% 
+  filter(preexisting == 0) %>% filter(registered_current_gp_90 == 1) %>% count() #1,804,428
+
+dep_cohort_interim_7 %>%  filter(valid_practice == 1) %>% 
+  filter(valid_gender == 1) %>% filter(qof_depression == 1) %>% 
+  filter(preexisting == 0) %>% filter(registered_current_gp_90 == 1) %>% 
+  filter(depression_diag_under18yo == 0) %>% count() #1,730,818
+
+
+dep_cohort_interim_7 %>% filter(valid_practice == 1) %>% 
+  filter(valid_gender == 1) %>% filter(qof_depression == 1) %>% 
+  filter(preexisting == 0) %>% filter(registered_current_gp_90 == 1) %>% 
+  filter(depression_diag_under18yo == 0)  %>% filter(diagnosed_after_QOF == 1) %>% count() #1,374,994
+
+
+dep_cohort_interim_7 %>% filter(valid_practice == 1) %>% 
+  filter(valid_gender == 1) %>% filter(qof_depression == 1) %>% 
+  filter(preexisting == 0) %>% filter(registered_current_gp_90 == 1) %>% 
+  filter(depression_diag_under18yo == 0)  %>% filter(diagnosed_after_QOF == 1) %>%
+  filter(with_hes == 1) %>% count() #1,090,369
+
+
+dep_cohort_interim_7 %>% filter(valid_practice == 1) %>% 
+  filter(valid_gender == 1) %>% filter(qof_depression == 1) %>% 
+  filter(preexisting == 0) %>% filter(registered_current_gp_90 == 1) %>% 
+  filter(depression_diag_under18yo == 0)  %>% filter(diagnosed_after_QOF == 1) %>%
+  filter(with_hes == 1) %>%filter(is.na(preexisting_smi)) %>% count() #1,079,903
+
+
+#This is my cohort example
+analysis <- cprd$analysis("dh_depsev")
+
+#Valid practice 
+#Valid gender
+#Has a QOF code
+#No evidence of depression pre-existing diagnosis
+#Registered 90 days after GP reg.
+#Diagnosed after 18yo
+#Diagnosed after 01/04/2006
+#Has HES linkage
+#Doesn't have a pre-existing SMI diagnosis.
+analysis <- cprd$analysis("dh_depsev")
+
+full_dep_cohort_filtered <- full_dep_cohort %>% filter(valid_practice == 1) %>% 
+  filter(valid_gender == 1) %>% filter(qof_depression == 1) %>% 
+  filter(preexisting == 0) %>% filter(registered_current_gp_90 == 1) %>% 
+  filter(depression_diag_under18yo == 0)  %>% filter(diagnosed_after_QOF == 1) %>%
+  filter(with_hes == 1) %>%filter(is.na(preexisting_smi)) %>%
+  analysis$cached("full_depression_cohort", indexes = c("patid"))
+
+
+full_dep_cohort_ids <- full_dep_cohort_filtered %>% filter(valid_practice == 1) %>% 
+  filter(valid_gender == 1) %>% filter(qof_depression == 1) %>% 
+  filter(preexisting == 0) %>% filter(registered_current_gp_90 == 1) %>% 
+  filter(depression_diag_under18yo == 0)  %>% filter(diagnosed_after_QOF == 1) %>%
+  filter(with_hes == 1) %>%filter(is.na(preexisting_smi)) %>% select(patid, index_date) %>% 
+analysis$cached("full_depression_cohort_ids", indexes = c("patid"))
