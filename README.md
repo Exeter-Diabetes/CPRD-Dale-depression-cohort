@@ -22,8 +22,5 @@ The cohort is defined using the following criteria:
   - Diagnosed with depression after introduction depression into the Quality and Outcomes Framework (01/04/2025)
 
 
-```mermaid
-graph TD;
-    A["<b>CPRD Aurum December 2023 release</b><br>with linked November 2023 HES APC, and patient IMD"] -->|Unique patients with a depression-related medcode between 1988–30/12/2023| B["<b>Our extract</b>: n = 3,984,014"] --> C["<b>With a valid 'broad depression' code</b>: n = 3,581,691"]
+![image](https://github.com/user-attachments/assets/e176c4fe-21eb-47bb-ac4e-971030784f2d)
 
-```
