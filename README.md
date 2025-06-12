@@ -22,5 +22,5 @@ The cohort is defined using the following criteria:
   - Diagnosed with depression after introduction depression into the Quality and Outcomes Framework (01/04/2025)
 
 
-![image](https://github.com/user-attachments/assets/e176c4fe-21eb-47bb-ac4e-971030784f2d)
+![image](https://github.com/user-attachments/assets/62484341-d2f9-4ded-bad3-4bfb15fdfacb)
 
