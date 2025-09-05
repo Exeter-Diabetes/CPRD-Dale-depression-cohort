@@ -30,3 +30,19 @@ While all individuals were required to have a QOF depression medcode for inclusi
 
 ![image](https://github.com/user-attachments/assets/62484341-d2f9-4ded-bad3-4bfb15fdfacb)
 
+
+# Depression severity/biotypes
+
+## Public health Questionnaire 9 (PHQ-9) data processing
+
+### Description
+The PHQ-9 is a questionnaire that is used for both depression screening and severity testing.
+The questionnaire is composed of 9 questions, each of which can have a maximum value of 3 points. For diagnosis, the following categories are sometimes used:
+
+  - **Score 10+:** Cut off score used to denote a current episode of depression.
+  - **Score 10 - 14:** Moderate depression
+  - **Score 15 - 19:** Moderately severe depression
+  - **Score 20+:** Severe depression
+
+### QC process
+While the most common SNOMED-CT codes for PHQ-9 relate to individuals
