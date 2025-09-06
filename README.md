@@ -30,6 +30,11 @@ While all individuals were required to have a QOF depression medcode for inclusi
 
 ![image](https://github.com/user-attachments/assets/62484341-d2f9-4ded-bad3-4bfb15fdfacb)
 
+# Further adjustments of index date
+
+## 
+
+
 
 # Depression severity/biotypes
 
