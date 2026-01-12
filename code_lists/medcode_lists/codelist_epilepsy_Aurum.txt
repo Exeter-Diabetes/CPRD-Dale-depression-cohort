@@ -1,0 +1,102 @@
+medcodeid	term
+1013171000006112	adverse reaction to antiepileptics
+125721000006111	status epilepticus, unspecified
+1575941000006110	anticonvulsant levels
+178739011	epilepsy
+199568011	grand mal seizure
+2159274014	complex partial epileptic seizure
+230321000006117	petit mal (minor) epilepsy
+23819016	grand mal status
+23820010	status epilepticus
+254808014	o/e - fit/convulsion
+254810011	o/e - a convulsion
+254812015	o/e - no fit/convulsion seen
+254813013	o/e - grand mal fit
+254814019	o/e - petit mal fit
+254823016	o/e - fit/convulsion nos
+259446013	anticonvulsant level therapeutic
+2598881000006112	impulsive petit mal of janz
+2612101000006119	petit mal status
+2612121000006112	non-convulsive status epilepticus with impaired consciousness
+2618531000006116	autonomic petit mal
+2721471000006114	convulsive status epilepticus
+2744171000006119	hydantoin antiepileptic
+297266016	epileptic seizures - atonic
+297267013	epileptic seizures - akinetic
+297282015	epileptic seizures - clonic
+297283013	epileptic seizures - myoclonic
+297284019	epileptic seizures - tonic
+297302019	epileptic automatism
+299337010	[x]other status epilepticus
+299345017	[x]status epilepticus, unspecified
+301541000000116	simple partial epileptic seizure
+3157301000006115	retropulsion petit mal
+317017015	[d]convulsions
+317022015	[d]other specified convulsion
+317023013	convulsion
+318041015	[x]other and unspecified convulsions
+3379271000006119	grand mal convulsion
+345345010	complex partial status epilepticus
+3456861000006112	central convulsion
+3525751000006118	anticonvulsant
+362161000006110	acquired epileptic aphasia
+3795081000006117	petit mal
+379901000006113	[x]epileptic psychosis nos
+397978010	had a convulsion
+3981551000006111	fit - convulsion
+405571000006113	antiepileptic adverse reaction
+4311000033119	antiepileptics
+4333991000006111	anticonvulsant identification
+453344019	epileptic seizure
+4566351000006119	on examination - fit/convulsion
+4566391000006113	on examination - grand mal fit
+4566411000006113	on examination - petit mal fit
+472411018	grand mal epilepsy
+4769661000006119	automatism petit mal
+4769701000006110	epileptic complex partial seizures with automatisms
+5007411000006119	hemiplegia-hemiconvulsion-epilepsy syndrome
+5007421000006110	hemiconvulsion-hemiplegia-epilepsy syndrome
+5007541000006119	epilepsy with grand mal seizures on awakening
+5007671000006114	epilepsy with myoclonic absences
+5008231000006113	non-convulsive simple partial status epilepticus
+5023531000006114	epileptic psychosis
+5231851000006114	generalized convulsion
+5231861000006111	generalised convulsion
+5362461000006118	anticonvulsant
+5618201000006113	paranoid-hallucinatory epileptic psychosis
+5780951000006110	barbiturate antiepileptic adverse reaction
+5800681000006114	antiepileptic allergy
+5800741000006114	barbiturate antiepileptic allergy
+594691000006119	convulsion - symptom
+6028631000006116	epileptic convulsion
+6189731000006117	barbiturate antiepileptic
+6189781000006116	carbazepine antiepileptic
+6369841000006110	barbiturate antiepileptic
+6369851000006112	carbazepine antiepileptic
+647301000006112	epileptic absences
+6478211000006117	benzodiazepine antiepileptic
+7001441000006114	simple partial status epilepticus
+7265381000006118	nonconvulsive status epilepticus
+7566871000006113	anticonvulsant hypersensitivity syndrome
+77655010	anticonvulsant therapy
+8024971000006110	partial epileptic seizure of parietal lobe with impairment of consciousness
+8024991000006111	complex partial epileptic seizure of frontal lobe
+8025001000006116	partial epileptic seizure of frontal lobe with impairment of consciousness
+8025021000006114	complex partial epileptic seizure of occipital lobe
+8025031000006112	partial epileptic seizure of occipital lobe with impairment of consciousness
+8089571000006111	status epilepticus due to complex partial epileptic seizure
+8089581000006114	status epilepticus due to refractory complex partial seizures
+8089591000006112	status epilepticus due to intractable complex partial seizures
+8089601000006116	status epilepticus due to generalised idiopathic epilepsy
+8089611000006118	status epilepticus due to generalized idiopathic epilepsy
+8089631000006112	status epilepticus due to intractable idiopathic generalised epilepsy
+8089641000006119	status epilepticus due to intractable idiopathic generalized epilepsy
+8089651000006117	status epilepticus due to refractory idiopathic generalized epilepsy
+8089661000006115	status epilepticus due to refractory idiopathic generalised epilepsy
+8089671000006110	status epilepticus due to refractory epilepsy
+8089681000006113	status epilepticus due to intractable epilepsy
+8089691000006111	status epilepticus due to refractory simple partial epilepsy
+8089701000006111	status epilepticus due to intractable simple partial epilepsy
+8089791000006116	status epilepticus in benign rolandic epilepsy
+883041000006118	petit mal epilepsy
+905881000006111	[rfc] epilepsy/convulsion
