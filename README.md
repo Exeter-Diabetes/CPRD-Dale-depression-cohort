@@ -1,9 +1,6 @@
 # CPRD depression cohort
 WORK IN PROGRESS
 
-- Diagnosed before birth or after death.
-
-
 To add: 
   - Depression and biomarker code lists
   -   - Upload latest scripts
