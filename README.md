@@ -31,10 +31,17 @@ While all individuals were required to have a QOF depression medcode for inclusi
 ![image](https://github.com/user-attachments/assets/62484341-d2f9-4ded-bad3-4bfb15fdfacb)
 
 # Further adjustments of index date
+Antidepressant use was considered as a primary indicator of depression diagnosis. Given that non-SSRIs (especially since the 1990s) have been the primary first-line antidepressant for depression treatment, we only considered SSRIs as an indicator. The follow criteria were used to define an antidepressant-informed index date: 
 
-## 
+- The patient must receive an SSRI as their first antidepressant. 
+- The patient must receive their first antidepressant prescription more than 90 days after their current GP practice registration. This approach prevents legacy prescriptions being treated as a new depressive episode.
+- In line with our QOF guideline-based cohort design, individuals must receive their first antidepressant prescription after the introduction of depression to the QOF (01/04/2006). 
 
+From this point, individuals had two index dates:
+- A date at which they first received a diagnostic depression code
+- A date at which, if ever, they first received an antidepressant.
 
+For all individuals, their depression index date was defined as the earliest of these two dates. 
 
 # Depression severity/biotypes
 
@@ -49,5 +56,4 @@ The questionnaire is composed of 9 questions, each of which can have a maximum v
   - **Score 15 - 19:** Moderately severe depression
   - **Score 20+:** Severe depression
 
-### QC process
-While the most common SNOMED-CT codes for PHQ-9 relate to individuals
+
