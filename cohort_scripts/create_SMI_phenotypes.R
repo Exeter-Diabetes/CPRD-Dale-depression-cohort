@@ -4,15 +4,6 @@ library(data.table)
 library(fuzzyjoin)
 
 
-#Connect to CPRD dat
-con2 <- dbConnect(MariaDB(),
-                  dbname = "cprd_feb24depression_analysis",
-                  host = "localhost",
-                  port = 3307,
-                  user = "dh674",
-                  password = "Benzin1994!"
-)
-
 #Read in the SMI codelist
 smi <- fread("")
 smi_refined <- fread("")
