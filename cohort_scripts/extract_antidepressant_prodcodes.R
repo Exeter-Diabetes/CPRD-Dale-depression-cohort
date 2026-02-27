@@ -6,13 +6,13 @@ rm(list = ls())
 ####Connection and code lists####
 #Open connection
 #Connect to the MySQL database
-cprdenvname <- ""
-yaml <- ""
+cprdenvname <- "CPRD_depression_data"
+yaml <- ".aurum.yaml"
 
 #open connection and get codes sets
 cprd = CPRDData$new(cprdEnv = cprdenvname, cprdConf = yaml)
 codesets <- cprd$codesets()
-codes <- codesets$getAllCodeSetVersion("18/05/2025")
+codes <- codesets$getAllCodeSetVersion("26/02/2026")
 
 analysis <- cprd$analysis("all_patid")
 
@@ -49,6 +49,7 @@ for(i in drugs){
   drug_class <- i
   
   #Names for dynamically saving table
+  current_cat <- paste0(i, "_cat")
   current_cat_sym <- sym(current_cat)
   index_cols <- c("patid", "date", "chem_name")
   
@@ -61,6 +62,8 @@ for(i in drugs){
     select(patid, date=issuedate, dosageid, quantity, quantunitid, duration, chem_name = !!current_cat_sym, drug_class) %>%
     analysis$cached(clean_tablename, indexes=index_cols)
 }
+
+
 
 
 
