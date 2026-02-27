@@ -57,3 +57,4 @@ The questionnaire is composed of 9 questions, each of which can have a maximum v
   - **Score 20+:** Severe depression
 
 
+# Example project: time to augmentation therapy in individuals with newly diagnosed depression
