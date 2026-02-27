@@ -5,7 +5,7 @@ con2 <- dbConnect(MariaDB())
 
 con3 <- dbConnect(MariaDB())
 
-
+#This is currently a temporary file - I need to re-extract the PHQ-9 data where the coding category indicates that the diagnostic criteria for depression was not met.
 
 #Get the data from CPRD:
 #Depression cohort, T2D cohort, and PHQ-9
