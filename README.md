@@ -57,6 +57,10 @@ The questionnaire is composed of 9 questions, each of which can have a maximum v
 
 A PhQ-9 score at index was defined as having been recorded within 30 days before or 7 days after either receiving their first antidepressant or depression code. The 7 day excess window is allow for delayed entry time into EMIS. 
 
+## Recurrent depression
+Recurrent depression was defined as evidence for 
+
+
 ## Antidepressant use
 Antidepressant use was defined as having a prescription of any antidepressant, as outlined in the sections above.
 
@@ -82,6 +86,13 @@ Augmentation therapy was considered as receiving one of four widely used antipsy
 We also considered two definitions:
 - **Clinical definition**: Defined according to Fabbri et al 2021 (https://pubmed.ncbi.nlm.nih.gov/33753889/). Individuals were required to have a prescription overlap of at least 30 days with an antidepressant. This definition is very strict but is closest to approximating the guidelines for antipsychotic augmentation in depression.
 - **Real-world definition**: In this case, we require a single prescription for one of these antidepressant to be considered as augmentation. Although the clinical guidelines definition is ideal, we recognise that many individuals may frequently change antidepressants and/or require rapid antipsychotic augmentation if they have very severe depression. 
+
+
+## Hospitalisation for depression
+Hospitalisation for depression was considered as receiving and ICD-10 code for depression (F32 - F33). We considered two definitions to reflect recording in secondary care hospitalisation records:
+
+- **Primary hospitalisation**: Primary hospitalisation was considered as a listing where the primary cause of hospitalisation was depression. These are the most "clean-cut" hospitalisation cases.
+- **Secondary hospitalisation**: Secondary hospitalisation was considered as receiving a non-primary hospitalisation code for depression. We find this phenotype might be interesting, as there might be specific causes for listing of depression during admitted patient care.
 
 
 
