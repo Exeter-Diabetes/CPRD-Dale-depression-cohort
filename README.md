@@ -58,8 +58,11 @@ The questionnaire is composed of 9 questions, each of which can have a maximum v
 A PhQ-9 score at index was defined as having been recorded within 30 days before or 7 days after either receiving their first antidepressant or depression code. The 7 day excess window is allow for delayed entry time into EMIS. 
 
 ## Recurrent depression
-Recurrent depression was defined as evidence for 
-
+Recurrent depression was defined as evidence for starting a new depressive episode. Given variable definitions in the literature, we considered four different definitions of recurrence:
+- **3 month window, code-based**: a new episode was considered as receiving no new depression codes within a 3 month window.
+- **6 month window, code-based**: As above, but requires a 6 month gap.
+- **3 month window, code and prescription based**: A new episode was considered as receiving no new depression codes or antidepressant prescriptions within a 3 month window.
+- **6 month window, code and prescription based**: As above, but requires a 6 month gap. 
 
 ## Antidepressant use
 Antidepressant use was defined as having a prescription of any antidepressant, as outlined in the sections above.
