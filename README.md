@@ -64,10 +64,10 @@ Recurrent depression was defined as evidence for
 ## Antidepressant use
 Antidepressant use was defined as having a prescription of any antidepressant, as outlined in the sections above.
 
-## Trying a different antidepressant of the same class (SSRI)
+## Ever prescribed a different antidepressant of the same class (SSRI)
 This was defined as the first instance at which an individual  received a prescription for another SSRI (as all individuals were required to try an SSRI first as part of the inclusion criteria). 
 
-## Trying another antidepressant class
+## Ever prescribed another antidepressant class
 This was defined as the first instance at which an individual received a prescription for a non-SSRI antidepressant prescription. 
 
 ## Antidepressant coverage
