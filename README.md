@@ -81,7 +81,7 @@ Augmentation therapy was considered as receiving one of four widely used antipsy
 
 We also considered two definitions:
 - **Clinical definition**: Defined according to Fabbri et al 2021 (https://pubmed.ncbi.nlm.nih.gov/33753889/). Individuals were required to have a prescription overlap of at least 30 days with an antidepressant. This definition is very strict but is closest to approximating the guidelines for antipsychotic augmentation in depression.
-- **Real-world definition**: In this case, we require a single prescription for one of these antidepressant to be considered as augmentation. 
+- **Real-world definition**: In this case, we require a single prescription for one of these antidepressant to be considered as augmentation. Although the clinical guidelines definition is ideal, we recognise that many individuals may frequently change antidepressants and/or require rapid antipsychotic augmentation if they have very severe depression. 
 
 
 
