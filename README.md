@@ -95,6 +95,5 @@ Hospitalisation for depression was considered as receiving and ICD-10 code for d
 - **Secondary hospitalisation**: Secondary hospitalisation was considered as receiving a non-primary hospitalisation code for depression. We find this phenotype might be interesting, as there might be specific causes for listing of depression during admitted patient care.
 
 
-
 # Public health Questionnaire 9 (PHQ-9) data processing
 
