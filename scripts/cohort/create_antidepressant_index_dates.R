@@ -128,8 +128,3 @@ ad_cohort_final <- cohort %>% left_join(ad_cohort, by = "patid") %>%
 ad_cohort_final <- ad_cohort_final %>% 
   rename(regstartdate = regstartdate.x) %>% select(-regstartdate.y) %>%
   mutate(age_at_ad_code_index = difftime(as.numeric(ad_code_index_date - dob)/365.25))
-
-#Apply selection criteria as in depression cohort script
-analysis <- cprd$analysis("dh_depclinhet")
-
-dep_cohort <- 
