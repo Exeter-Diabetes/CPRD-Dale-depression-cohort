@@ -25,8 +25,99 @@ The cohort is defined using the following criteria:
 While all individuals were required to have a QOF depression medcode for inclusion in this study, we allowed index dates to reflect the earliest occurrence of depression identified using the 
 "Broad depression" phenotype.
 
-![image](<img width="670" height="852" alt="image" src="https://github.com/user-attachments/assets/128626cf-ce6d-4501-8b19-a9feb263bd08" />
-)
+```mermaid
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+  <style>
+    body { background: white; display: flex; justify-content: center; padding: 20px; font-family: sans-serif; }
+    .mermaid { max-width: 900px; width: 100%; }
+  </style>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A["CPRD Aurum December 2023 release
+    with linked November 2023
+    HES APC, and patient IMD"]
+
+    B["Unique patients with a
+    depression-related
+    medcode between 1988–
+    30/12/2023"]:::grey
+
+    C["Our extract:
+    n = 3,984,014"]
+
+    D["With at least one valid
+    'broad depression' code:
+    n = 3,575,597"]
+
+    E["indeterminate gender
+    n = 320"]:::exclude
+    F["Patient from one of 44
+    merged practices
+    n = 42,300"]:::exclude
+    G["n = 3,533,297"]
+
+    H["With a valid Depression
+    QOF code"]:::grey
+
+    I["n = 3,368,094"]
+
+    J["Evidence of depression
+    diagnosis prior to patient's
+    CPRD records
+    n = 504,949"]:::exclude
+    K["Registered with current GP
+    &lt;90 days prior to diagnosis
+    n = 1,057,261"]:::exclude
+    L["n = 1,805,884"]
+
+    M["First depression code
+    before 18 years of age
+    n = 73,628"]:::exclude
+    N["Diagnosed after introduction
+    of depression Quality
+    and Outcomes Framework
+    (01/04/2006)
+    n = 355,610"]:::exclude
+    O["n = 1,376,646"]
+
+    P["With HES Linkage"]:::grey
+
+    Q["CPRD at-diagnosis
+    depression cohort
+    n = 1,090,369"]:::final
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    D --> F
+    D --> G
+    G --> H
+    H --> I
+    I --> J
+    I --> K
+    I --> L
+    L --> M
+    L --> N
+    L --> O
+    O --> P
+    P --> Q
+
+    classDef grey fill:#d0d0d0,stroke:#999,color:#000
+    classDef exclude fill:#fff,stroke:#333,color:#000
+    classDef final fill:#fff,stroke:#333,color:#000
+</div>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'default' });</script>
+</body>
+</html>
+
+```
 
 # Further adjustments of index date
 Antidepressant use was considered as a primary indicator of depression diagnosis. Given that non-SSRIs (especially since the 1990s) have been the primary first-line antidepressant for depression treatment, we only considered SSRIs as an indicator. The follow criteria were used to define an antidepressant-informed index date: 
