@@ -26,18 +26,6 @@ While all individuals were required to have a QOF depression medcode for inclusi
 "Broad depression" phenotype.
 
 ```mermaid
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
-  <style>
-    body { background: white; display: flex; justify-content: center; padding: 20px; font-family: sans-serif; }
-    .mermaid { max-width: 900px; width: 100%; }
-  </style>
-</head>
-<body>
-<div class="mermaid">
 flowchart TD
     A["CPRD Aurum December 2023 release
     with linked November 2023
@@ -72,7 +60,7 @@ flowchart TD
     CPRD records
     n = 504,949"]:::exclude
     K["Registered with current GP
-    &lt;90 days prior to diagnosis
+    <90 days prior to diagnosis
     n = 1,057,261"]:::exclude
     L["n = 1,805,884"]
 
@@ -112,11 +100,6 @@ flowchart TD
     classDef grey fill:#d0d0d0,stroke:#999,color:#000
     classDef exclude fill:#fff,stroke:#333,color:#000
     classDef final fill:#fff,stroke:#333,color:#000
-</div>
-<script>mermaid.initialize({ startOnLoad: true, theme: 'default' });</script>
-</body>
-</html>
-
 ```
 
 # Further adjustments of index date
