@@ -1,10 +1,5 @@
 # CPRD depression cohort
-WORK IN PROGRESS
-
-To add: 
-  - Depression and biomarker code lists
-  -   - Upload latest scripts
-  
+**NOTE:** This GitHub page is a work in progress. Code lists will be made available as the project progresses. 
 
 ## Cohort definition
 This Github details the construction of the CPRD depression cohort using the February 2024 CPRD data extraction.
@@ -20,6 +15,8 @@ The cohort is defined using the following criteria:
   - Non-diagnostic depression codes present at first evidence of depression (see broad_depression code list).
   - Diagnosed with a severe mental illness (excluding depression with psychosis) prior to depression.
   - Diagnosed with depression after introduction depression into the Quality and Outcomes Framework (01/04/2025)
+
+All scripts related to the baseline QC of the cohort can be found [HERE](cohort_scripts/)
 
 ## Index date definition
 While all individuals were required to have a QOF depression medcode for inclusion in this study, we allowed index dates to reflect the earliest occurrence of depression identified using the 
@@ -101,8 +98,9 @@ flowchart TD
     classDef exclude fill:#fff,stroke:#333,color:#000
     classDef final fill:#fff,stroke:#333,color:#000
 ```
+# Further QC considerations
 
-# Further adjustments of index date
+## Further adjustments of index date
 Antidepressant use was considered as a primary indicator of depression diagnosis. Given that non-SSRIs (especially since the 1990s) have been the primary first-line antidepressant for depression treatment, we only considered SSRIs as an indicator. The follow criteria were used to define an antidepressant-informed index date: 
 
 - The patient must receive an SSRI as their first antidepressant. 
@@ -113,9 +111,11 @@ From this point, individuals had two index dates:
 - A date at which they first received a diagnostic depression code
 - A date at which, if ever, they first received an antidepressant.
 
-For all individuals, their depression index date was defined as the earliest of these two dates. 
+For all individuals, their depression index date was defined as the earliest of these two dates. The code for this section 
 
-## Further QC considerations
+
+
+
 
 # Clinical heterogeneity in depression
 All scripts and codes related to these phenotypes are included in cohort_scripts/depression_phrenotypes section of this Repo.
