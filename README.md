@@ -16,7 +16,7 @@ The cohort is defined using the following criteria:
   - Diagnosed with a severe mental illness (excluding depression with psychosis) prior to depression.
   - Diagnosed with depression after introduction depression into the Quality and Outcomes Framework (01/04/2025)
 
-All scripts related to the baseline QC of the cohort can be found [HERE](cohort_scripts/)
+All scripts related to the baseline QC of the cohort can be found [HERE](scripts/cohort/)
 
 ## Index date definition
 While all individuals were required to have a QOF depression medcode for inclusion in this study, we allowed index dates to reflect the earliest occurrence of depression identified using the 
