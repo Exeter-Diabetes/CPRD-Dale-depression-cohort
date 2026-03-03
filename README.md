@@ -17,7 +17,7 @@ The cohort is defined using the following criteria:
 
 All scripts related to the baseline QC of the cohort can be found [HERE](scripts/cohort/)
 
-## Index date definition
+### Index date definition
 While all individuals were required to have a QOF depression medcode for inclusion in this study, we allowed index dates to reflect the earliest occurrence of depression identified using the 
 "Broad depression" phenotype.
 
@@ -97,7 +97,7 @@ flowchart TD
     classDef exclude fill:#fff,stroke:#333,color:#000
     classDef final fill:#fff,stroke:#333,color:#000
 ```
-# Further QC considerations
+## Further QC considerations
 
 ## Further adjustments of index date
 Antidepressant use was considered as a primary indicator of depression diagnosis. Given that non-SSRIs (especially since the 1990s) have been the primary first-line antidepressant for depression treatment, we only considered SSRIs as an indicator. We made this adjustment as we found that, even using our strict code list requirements, approximately 70% of individuals initiate an antidepressant prior to their first depression code. In turn, by only considering SSRIs as an indicator of diagnosis, we minimise the number of historical cases included in our data.
@@ -114,14 +114,14 @@ From this point, individuals had two index dates:
 
 For all individuals, their depression index date was defined as the earliest of these two dates. The code for this section is available [HERE](/scripts/cohort/create_antidepressant_index_dates.R)
 
-## Exclusion of severe mental illness cases
+### Exclusion of severe mental illness cases
 Given the strongest relationship between early depressive symptoms and progression to severe mental illness, it might be appropriate (depending on your analysis) to exclude individuals with evidence of severe mental illness which pre-exists the first depression code/SSRI prescription. We provide the code for SMI exclusion (including hospitalisation for depression with psychotic features, schizophrenia, bipolar disorder, and other psychoses) [HERE](scripts/cohort/create_SMI_phenotypes.R). For some studies, it might be more appropriate to avoid SMI-based exclusions, as SMIs form part of the heterogeneity that composes depression in a primary care setting. 
 
-# Clinical heterogeneity in depression
+## Clinical heterogeneity in depression
 All scripts and codes related to these phenotypes are included in cohort_scripts/depression_phrenotypes section of this Repo.
 Where possible, all phenotypes were defined as events, besides antidepressant adherence.
 
-## Public Health Questionnaire-9 results
+### Public Health Questionnaire-9 results
 The PHQ-9 is a questionnaire that is used for both depression screening and severity testing.
 The questionnaire is composed of 9 questions, each of which can have a maximum value of 3 points. For diagnosis, the following categories are sometimes used:
 
@@ -139,29 +139,29 @@ PHQ-9 measurements are recorded in three primary forms:
 
 We then chose the PHQ-9 value which was closest to index date as the value for the "PHQ-9 at index" phenotype. In the event that multiple PHQ-9 codes were available on the same date, we prioritised complete scores, then partial scores, then categories. Once this QC was performed, PHQ-9 scores were also transformed backwards to create the PHQ-9 clinical categories.
 
-## Recurrent depression
+### Recurrent depression
 Recurrent depression was defined as evidence for starting a new depressive episode. Given variable definitions in the literature, we considered four different definitions of recurrence:
 - **3 month window, code-based**: a new episode was considered as receiving no new depression codes within a 3 month window.
 - **6 month window, code-based**: As above, but requires a 6 month gap.
 - **3 month window, code and prescription based**: A new episode was considered as receiving no new depression codes or antidepressant prescriptions within a 3 month window.
 - **6 month window, code and prescription based**: As above, but requires a 6 month gap.
 
-## Antidepressant use
+### Antidepressant use
 Antidepressant use was defined as having a prescription of any antidepressant, as outlined in the sections above.
 
-## Ever prescribed a different antidepressant of the same class (SSRI)
+### Ever prescribed a different antidepressant of the same class (SSRI)
 This was defined as the first instance at which an individual  received a prescription for another SSRI (as all individuals were required to try an SSRI first as part of the inclusion criteria). 
 
-## Ever prescribed another antidepressant class
+### Ever prescribed another antidepressant class
 This was defined as the first instance at which an individual received a prescription for a non-SSRI antidepressant prescription. 
 
-## Antidepressant coverage
+### Antidepressant coverage
 Over a given time frame, antidepressant use was calculated using Percentage days covered, as described by https://pubmed.ncbi.nlm.nih.gov/40696379/. As it might be expected that individuals are not required all the time, PDC more accurately describes the amount of time covered by antidepressant prescriptions as a measure of ongoing depression treatment rather than a proxy for medication adherence.
 
-## Treatment resistant depression
+### Treatment resistant depression
 For treatment resistance, we used a previously published definition. Briefly, prescriptions were split into 6 month windows, where a new episode began when there was more than 6 months since the previous antidepressant prescription. Treatment resistance was defined as receiving a third antidepressant within given time frames, in line with clinical prescribing guidelines (https://pubmed.ncbi.nlm.nih.gov/33753889/). 
 
-## Augmentation therapy with antipsychotics
+### Augmentation therapy with antipsychotics
 Augmentation therapy was considered as receiving one of four widely used antipsychotics for augmentation therapy:
 - Quetiapine
 - Rispiradone
@@ -175,11 +175,11 @@ We also considered two definitions:
 - **Real-world definition**: In this case, we require a single prescription for one of these antidepressant to be considered as augmentation. Although the clinical guidelines definition is ideal, we recognise that many individuals may frequently change antidepressants and/or require rapid antipsychotic augmentation if they have very severe depression. 
 
 
-## Hospitalisation for depression
+### Hospitalisation for depression
 Hospitalisation for depression was considered as receiving and ICD-10 code for depression (F32 - F33). We considered two definitions to reflect recording in secondary care hospitalisation records:
 
 - **Primary hospitalisation**: Primary hospitalisation was considered as a listing where the primary cause of hospitalisation into admitted patient care was depression. These are the most "clean-cut" hospitalisation cases.
 - **Secondary hospitalisation**: Secondary hospitalisation was considered as receiving a non-primary hospitalisation code for depression. We find this phenotype might be interesting, as there might be specific causes for listing of depression during admitted patient care.
 
-## Secondary referrals
+### Secondary referrals
 A secondary referral is considered any referall to any secondary care provider. While this phenotype is highly heterogenous, it was designed to encapsulate all individuals who required psychiatric care that could not be fully provided by the primary care provider. 
