@@ -112,11 +112,10 @@ From this point, individuals had two index dates:
 - A date at which they first received a diagnostic depression code
 - A date at which, if ever, they first received an antidepressant.
 
-For all individuals, their depression index date was defined as the earliest of these two dates. The code for this section 
+For all individuals, their depression index date was defined as the earliest of these two dates. The code for this section is available [HERE](/scripts/cohort/create_antidepressant_index_dates.R)
 
-
-
-
+## Exclusion of severe mental illness cases
+Given the strongest relationship between early depressive symptoms and progression to severe mental illness, it might be appropriate (depending on your analysis) to exclude individuals with evidence of severe mental illness which pre-exists the first depression code/SSRI prescription. We provide the code for SMI exclusion (including hospitalisation for depression with psychotic features, schizophrenia, bipolar disorder, and other psychoses) [HERE](scripts/cohort/create_SMI_phenotypes.R). For some studies, it might be more appropriate to avoid SMI-based exclusions, as SMIs form part of the heterogeneity that composes depression in a primary care setting. 
 
 # Clinical heterogeneity in depression
 All scripts and codes related to these phenotypes are included in cohort_scripts/depression_phrenotypes section of this Repo.
@@ -133,12 +132,19 @@ The questionnaire is composed of 9 questions, each of which can have a maximum v
 
 A PhQ-9 score at index was defined as having been recorded within 30 days before or 7 days after either receiving their first antidepressant or depression code. The 7 day excess window is allow for delayed entry time into EMIS. 
 
+PHQ-9 measurements are recorded in three primary forms:
+- **scores**: These are raw scores, which range from 0 - 27. Measurements where the score was recorded as below 0 or above 27 were excluded. These scores account for >90% of all recorded scores in CPRD Aurum. 
+- **Partial scores**: These are PHQ scores which were recorded by each item on the questionnaire. For an individual to have a valid score, they must have all 9 items from the PHQ-9 recorded on the same date, no individual item must be below 0 or above 3, and the total score of the combined items must be above 0 and below 27.
+- **category**: As described above, clinical interpretation of the PHQ-9 is usually done via use of categorisation. Where categories were provided, they were replaced with the middle value for the category.
+
+We then chose the PHQ-9 value which was closest to index date as the value for the "PHQ-9 at index" phenotype. In the event that multiple PHQ-9 codes were available on the same date, we prioritised complete scores, then partial scores, then categories. Once this QC was performed, PHQ-9 scores were also transformed backwards to create the PHQ-9 clinical categories.
+
 ## Recurrent depression
 Recurrent depression was defined as evidence for starting a new depressive episode. Given variable definitions in the literature, we considered four different definitions of recurrence:
 - **3 month window, code-based**: a new episode was considered as receiving no new depression codes within a 3 month window.
 - **6 month window, code-based**: As above, but requires a 6 month gap.
 - **3 month window, code and prescription based**: A new episode was considered as receiving no new depression codes or antidepressant prescriptions within a 3 month window.
-- **6 month window, code and prescription based**: As above, but requires a 6 month gap. 
+- **6 month window, code and prescription based**: As above, but requires a 6 month gap.
 
 ## Antidepressant use
 Antidepressant use was defined as having a prescription of any antidepressant, as outlined in the sections above.
@@ -170,9 +176,8 @@ We also considered two definitions:
 ## Hospitalisation for depression
 Hospitalisation for depression was considered as receiving and ICD-10 code for depression (F32 - F33). We considered two definitions to reflect recording in secondary care hospitalisation records:
 
-- **Primary hospitalisation**: Primary hospitalisation was considered as a listing where the primary cause of hospitalisation was depression. These are the most "clean-cut" hospitalisation cases.
+- **Primary hospitalisation**: Primary hospitalisation was considered as a listing where the primary cause of hospitalisation into admitted patient care was depression. These are the most "clean-cut" hospitalisation cases.
 - **Secondary hospitalisation**: Secondary hospitalisation was considered as receiving a non-primary hospitalisation code for depression. We find this phenotype might be interesting, as there might be specific causes for listing of depression during admitted patient care.
 
-
-# Public health Questionnaire 9 (PHQ-9) data processing
-
+## Secondary referrals
+A secondary referral is considered any referall to any secondary care provider. While this phenotype is highly heterogenous, it was designed to encapsulate all individuals who required psychiatric care that could not be fully provided by the primary care provider. 
