@@ -101,7 +101,9 @@ flowchart TD
 # Further QC considerations
 
 ## Further adjustments of index date
-Antidepressant use was considered as a primary indicator of depression diagnosis. Given that non-SSRIs (especially since the 1990s) have been the primary first-line antidepressant for depression treatment, we only considered SSRIs as an indicator. The follow criteria were used to define an antidepressant-informed index date: 
+Antidepressant use was considered as a primary indicator of depression diagnosis. Given that non-SSRIs (especially since the 1990s) have been the primary first-line antidepressant for depression treatment, we only considered SSRIs as an indicator. We made this adjustment as we found that, even using our strict code list requirements, approximately 70% of individuals initiate an antidepressant prior to their first depression code. In turn, by only considering SSRIs as an indicator of diagnosis, we minimise the number of historical cases included in our data.
+
+The follow criteria were used to define an antidepressant-informed index date: 
 
 - The patient must receive an SSRI as their first antidepressant. 
 - The patient must receive their first antidepressant prescription more than 90 days after their current GP practice registration. This approach prevents legacy prescriptions being treated as a new depressive episode.
