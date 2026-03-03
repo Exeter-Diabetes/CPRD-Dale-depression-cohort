@@ -25,7 +25,8 @@ The cohort is defined using the following criteria:
 While all individuals were required to have a QOF depression medcode for inclusion in this study, we allowed index dates to reflect the earliest occurrence of depression identified using the 
 "Broad depression" phenotype.
 
-![image](![Uploading image.png…]())
+![image](<img width="670" height="852" alt="image" src="https://github.com/user-attachments/assets/128626cf-ce6d-4501-8b19-a9feb263bd08" />
+)
 
 # Further adjustments of index date
 Antidepressant use was considered as a primary indicator of depression diagnosis. Given that non-SSRIs (especially since the 1990s) have been the primary first-line antidepressant for depression treatment, we only considered SSRIs as an indicator. The follow criteria were used to define an antidepressant-informed index date: 
