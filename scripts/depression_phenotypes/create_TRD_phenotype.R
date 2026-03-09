@@ -235,3 +235,91 @@ for (i in seq_len(nchunks)) {
 }
 
 dbExecute(con2, "COMMIT;")
+
+library(ggplot2)
+library(dplyr)
+library(forcats)
+library(patchwork)
+
+plot_colours <- c(
+  "Switch 1" = "#2C3E50",
+  "Switch 2" = "#2980B9",
+  "Switch 3" = "#27AE60"
+)
+
+# ── Plot 1: Time from first antidepressant to TRD date ──────────────────────
+
+trd_time <- dep4 %>%
+  filter(treatment_resistance_drug == 1) %>%
+  distinct(patid, ad_index_date, trd_date) %>%
+  mutate(weeks_to_trd = as.numeric(difftime(trd_date, ad_index_date, units = "weeks")),
+         years_to_trd = weeks_to_trd / 52) %>%
+  filter(!is.na(years_to_trd) & years_to_trd >= 0)
+
+p1 <- ggplot(trd_time, aes(x = years_to_trd)) +
+  geom_histogram(binwidth = 0.25, fill = "#2C3E50", colour = "white", alpha = 0.85) +
+  geom_vline(aes(xintercept = median(years_to_trd)),
+             colour = "#E74C3C", linetype = "dashed", linewidth = 0.8) +
+  annotate("text",
+           x = median(trd_time$years_to_trd) + 0.3,
+           y = Inf, vjust = 2,
+           label = paste0("Median: ", round(median(trd_time$years_to_trd), 1), " yrs"),
+           colour = "#E74C3C", size = 3.5) +
+  scale_x_continuous(breaks = seq(0, ceiling(max(trd_time$years_to_trd)), by = 1)) +
+  labs(
+    title = "A) Time from First Antidepressant to TRD",
+    x = "Years to TRD",
+    y = "Number of patients"
+  ) +
+  theme_minimal(base_size = 13)
+
+
+# ── Plot 2: Most common antidepressant at each switch position ───────────────
+
+switch_positions <- dep4 %>%
+  filter(treatment_resistance_switch == 1) %>%
+  group_by(patid) %>%
+  arrange(issue_date) %>%
+  mutate(switch_position = paste0("Switch ", row_number())) %>%
+  ungroup() %>%
+  filter(switch_position %in% c("Switch 1", "Switch 2", "Switch 3"))
+
+switch_counts <- switch_positions %>%
+  group_by(switch_position, chem_name) %>%
+  summarise(n = n(), .groups = "drop") %>%
+  group_by(switch_position) %>%
+  slice_max(n, n = 10) %>%
+  ungroup() %>%
+  mutate(chem_name = fct_reorder(chem_name, n))
+
+p2 <- ggplot(switch_counts, aes(x = chem_name, y = n, fill = switch_position)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ switch_position, scales = "free_y") +
+  coord_flip() +
+  scale_fill_manual(values = plot_colours) +
+  labs(
+    title = "B) Most Common Antidepressants at Each Treatment Switch",
+    x = NULL,
+    y = "Number of prescriptions"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(strip.text = element_text(face = "bold"))
+
+
+# ── Combine into panelled plot ───────────────────────────────────────────────
+
+combined <- p1 / p2 +
+  plot_annotation(
+    title = "Treatment-Resistant Depression Phenotype",
+    subtitle = "Among patients meeting TRD criteria",
+    theme = theme(
+      plot.title    = element_text(size = 15, face = "bold"),
+      plot.subtitle = element_text(size = 12, colour = "#7F8C8D")
+    )
+  )
+
+combined
+
+# ── Save ─────────────────────────────────────────────────────────────────────
+
+ggsave("TRD_phenotype_panel.png", combined, width = 12, height = 14, dpi = 300)
