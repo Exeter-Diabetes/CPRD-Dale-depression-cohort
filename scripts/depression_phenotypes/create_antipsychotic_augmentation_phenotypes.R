@@ -26,6 +26,16 @@ ap_post <- ap_post %>%
 
 ap_names <- c("quetiapine", "risperidone", "olanzapine", "aripiprazole")
 
+first_valid_ap <- ap_post %>%
+  group_by(patid) %>%
+  filter(all(valid_ap == 1)) %>%
+  filter(chem_name %in% ap_names) %>%
+  arrange(issuedate) %>%
+  slice(1) %>%
+  ungroup() %>%
+  select(patid, first_ap_date = issuedate, first_ap_name = chem_name)
+
+
 #Add invalid antipsychotic
 invalid_antipsychotic_preex <- ap_post %>% group_by(patid) %>% 
 filter(valid_ap == 0) %>% 
