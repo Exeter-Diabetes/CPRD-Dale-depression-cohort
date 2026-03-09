@@ -81,8 +81,8 @@ ad_table2 %>%
 count <- ad_table2 %>%
   group_by(patid) %>%
   summarise(
-    n_rep = sum(duplicated(chem_name)),  # count repeats within eid
-    tot   = n(),                         # total rows for that eid
+    n_rep = sum(duplicated(chem_name)),  # count repeats within patid
+    tot   = n(),                         # total rows for that patid
     .groups = "drop"
   )
 
@@ -100,7 +100,7 @@ dep2$treatment_resistance_drug <- ifelse((dep2$diff_drug_sw==1 & !is.na(dep2$dif
 
 #This code gets the start date after which two switches have occurred (IE the TRD date).
 trd_dates <- dep2 %>%
-  group_by(eid) %>%
+  group_by(patid) %>%
   arrange(issue_date, .by_group = TRUE) %>%
   mutate(
     next_issue_date = lead(issue_date),
