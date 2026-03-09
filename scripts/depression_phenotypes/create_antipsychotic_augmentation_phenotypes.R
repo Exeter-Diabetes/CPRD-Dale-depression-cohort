@@ -47,6 +47,7 @@ filter(chem_name %in% ap_names) %>%
 summarise(first_ap_date_main_incident = min(issuedate))
 
 ap_table <- ap_post %>% select(patid) %>% distinct() %>%
+left_join(cohort %>% select(patid, ad_index_date) %>%
 left_join(invalid_antipsychotic_preex, by = "patid") %>%
 left_join(invalid_antipsychotic_main_preex, by = "patid") %>% 
 left_join(invalid_antipsychotic_supp_incident, by = "patid") %>%
