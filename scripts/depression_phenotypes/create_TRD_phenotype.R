@@ -18,18 +18,15 @@ con3 <- dbConnect(MariaDB(),
                   password = ""
 )
 
-#Load in relevant tables
-cohort <- con2 %>% dbReadTable("dh_depsev_full_depression_cohort")
-ad <- con2 %>% dbReadTable("dh_depsev_ADs")
-ad_index <- con2 %>% dbReadTable("AD_informed_index_dates")
-index_dates <-con2 %>% dbReadTable("dh_depsev_first_AD_date_table")
+cohort <- con2 %>% dbReadTable("dh_clinhet_depression_cohort_interim_4")
+ad <- con2 %>% dbReadTable("dh_clinhet_clean_antidepressants")
 
-# QCed cohort
-ad_table <- ad %>% inner_join(ad_index %>% select(patid, AD_informed_index_date, AD_index_registration_90days)) %>%
-  filter(!is.na(AD_informed_index_date) & AD_index_registration_90days == 1)
 
+#Pull vars local so that we can run Chiara's exact code
+ad_table <- ad %>% inner_join(cohort %>% select(patid, ad_index_date), by = "patid")
 ad_table <- ad_table %>% arrange(patid, date)
 ad_table <- ad_table %>% rename(issue_date = date) %>% distinct()
+
 
 #Run Chiara's code - available at https://github.com/chiarafabbri/MDD_TRD_study/blob/master/scripts/extract_diagn_ADs_TRD_pheno.R
 ad_table %>%
