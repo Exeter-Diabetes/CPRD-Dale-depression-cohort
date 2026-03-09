@@ -127,14 +127,124 @@ dep4 <- dep2 %>%
 dep4 %>% filter(treatment_resistance_drug == 1) %>% 
   filter(!is.na(trd_date)) %>% distinct(patid) %>% count()
 
-#Establish the connection again
-con2 <- dbConnect(MariaDB(),
-                  dbname = "",
-                  host = "",
-                  port = ,
-                  user = "",
-                  password = ""
-)
+
+
+
+dbExecute(con2, "
+CREATE TABLE IF NOT EXISTS dh_clinhet_TRD (
+  patid                        BIGINT,
+  issue_date                   DATE,
+  dosageid                     VARCHAR(255),
+  quantity                     DOUBLE,
+  quantunitid                  INT,
+  duration                     BIGINT,
+  chem_name                    VARCHAR(255),
+  drug_class                   VARCHAR(255),
+  ad_index_date                DATE,
+  prev_drug_date               DATE,
+  diff_weeks_drug              DOUBLE,
+  prescription_episode         DOUBLE,
+  duration_prescr_ep           DOUBLE,
+  prescription_episode_drug    DOUBLE,
+  adequate_prescr_period       DOUBLE,
+  n_adequate_prescr            DOUBLE,
+  n_prescr                     INT,
+  adequate_prescr_prop         DOUBLE,
+  last_drug_prescr             VARCHAR(10),
+  adequate_prescr_mean         DOUBLE,
+  adequate_prescr_sd           DOUBLE,
+  drug_distinct                INT,
+  drug_switch                  VARCHAR(10),
+  between_drugs_weeks          DOUBLE,
+  treatment_resistance_switch  DOUBLE,
+  treatment_resistance_drug    DOUBLE,
+  n_rep_switch_drug            INT,
+  tot_drug_swtiches            INT,
+  diff_drug_sw                 INT,
+  trd_date                     DATE
+);
+")
+
+
+dbExecute(con2, "START TRANSACTION;")
+
+for (i in seq_len(nchunks)) {
+  
+  # Determine row indices for this chunk
+  idx <- ((i - 1) * chunksize + 1):min(i * chunksize, total_rows)
+  chunk <- dep4[idx, ]
+  
+  processed <- lapply(chunk, function(col) {
+    if (is.character(col) || is.factor(col)) {
+      paste0("'", gsub("'", "''", as.character(col)), "'")
+    } else if (inherits(col, "Date")) {
+      ifelse(is.na(col), "NULL", paste0("'", format(col, "%Y-%m-%d"), "'"))
+    } else if (is.numeric(col)) {
+      ifelse(is.na(col) | is.nan(col) | is.infinite(col),
+             "NULL",
+             format(col, scientific = FALSE))
+    } else {
+      rep("NULL", length(col))
+    }
+  })
+  
+  row_strings <- do.call(paste, c(processed, sep = ","))
+  row_strings <- paste0("(", row_strings, ")")
+  
+  query <- paste0(
+    "INSERT INTO dh_clinhet_TRD (",
+    paste(
+      c(
+        "patid",
+        "issue_date",
+        "dosageid",
+        "quantity",
+        "quantunitid",
+        "duration",
+        "chem_name",
+        "drug_class",
+        "ad_index_date",
+        "prev_drug_date",
+        "diff_weeks_drug",
+        "prescription_episode",
+        "duration_prescr_ep",
+        "prescription_episode_drug",
+        "adequate_prescr_period",
+        "n_adequate_prescr",
+        "n_prescr",
+        "adequate_prescr_prop",
+        "last_drug_prescr",
+        "adequate_prescr_mean",
+        "adequate_prescr_sd",
+        "drug_distinct",
+        "drug_switch",
+        "between_drugs_weeks",
+        "treatment_resistance_switch",
+        "treatment_resistance_drug",
+        "n_rep_switch_drug",
+        "tot_drug_swtiches",
+        "diff_drug_sw",
+        "trd_date"
+      ),
+      collapse = ", "
+    ),
+    ") VALUES ",
+    paste(row_strings, collapse = ",")
+  )
+  
+  dbExecute(con2, query)
+  
+  print(paste("Inserted chunk", i, "of", nchunks))
+}
+
+dbExecute(con2, "COMMIT;")
+
+
+
+
+
+
+
 
 
 # Define the chunk size and get row count
