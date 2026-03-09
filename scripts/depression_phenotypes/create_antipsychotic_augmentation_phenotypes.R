@@ -1,40 +1,31 @@
 con2 <- dbConnect(MariaDB(),)
 
+cohort <- con2 %>% dbReadTable("dh_clinhet_depression_cohort_interim_4")
+
 #AD informed index dates
-ad <- con2 %>% dbReadTable("dh_depsev_TRD_v2_0") %>% tibble()
+ad <- con2 %>% dbReadTable("dh_clinhet_TRD") %>% tibble()
 
 
 #Read in the antipsychotics and mood stabilisers
 ap <- con2 %>% dbReadTable("all_patid_clean_antipsychotics_prodcodes") %>% tibble()
-ms <- con2 %>% dbReadTable("all_patid_clean_mood_stabilisers_prodcodes") %>% tibble()
+ms <- con2 %>% dbReadTable("all_patid_clean_mood_stabilisers_prodcodes") %>% tibble()) %>% tibble()
 
 
-
-#Antidepressant index dates
-index <- dbReadTable(con2, "dh_depsev_AD_informed_index_dates") %>% tibble()
-
-#only individuals with valid AD prescription
-index <- index %>% 
-  filter(!is.na(AD_informed_index_date) & 
-           AD_index_registration_90days == 1 &
-           any_antidepressant == 1) %>%
-  select(patid, AD_informed_index_date)
-
-#First, we remove all ap and ms prescriptions which are not in our current analysis set,
-# Or before the antidepressant index date!
 ap_post <- ap %>% 
-  inner_join(index, by = "patid") %>% 
+  inner_join(cohort %>% select(patid, ad_index_date), by = "patid") %>% 
   arrange(patid, issuedate) %>%
-  mutate(valid_ap = ifelse(issuedate > AD_informed_index_date, 1, 0))
+  mutate(valid_ap = ifelse(issuedate > ad_index_date, 1, 0))
 
 ms_post <- ms %>% 
-  inner_join(index, by = "patid") %>% 
+  inner_join(cohort %>% select(patid, ad_index_date), by = "patid") %>% 
   arrange(patid, issuedate) %>%
-  mutate(valid_ms = ifelse(issuedate >= AD_informed_index_date, 1, 0)) 
+  mutate(valid_ms = ifelse(issuedate >= ad_index_date, 1, 0)) 
 
 #Create a list of individuals to exclude from AP phenotype
 ap_exclusions <- ap_post %>% filter(valid_ap == 0) %>% distinct(patid) #69,000 excluded - ~ half of sample
 ms_exclusion <- ms_post %>% filter(valid_ms == 0) %>% distinct(patid) # ~ half of sample
+
+#
 
 
 ap_post <- ap_post %>%
@@ -42,6 +33,8 @@ ap_post <- ap_post %>%
            str_trim() %>%
            str_to_lower() %>%
            str_remove("\\s.*$")) %>% rename(chem_name = antipsychotics_cat)
+
+#Next, we remove prescriptions which are not 
 
 # Generate overall augmentation using chiara's code.
 ap_post %>%
