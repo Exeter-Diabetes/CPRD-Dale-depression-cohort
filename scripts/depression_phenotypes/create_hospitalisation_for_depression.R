@@ -99,7 +99,7 @@ secondary_hosp <- first_secondary_hospitalisation %>%
 
 
 pct_data <- tibble(
-  Phenotype  = c("Primary Care\nHospitalisation", "Secondary Care\nHospitalisation"),
+  Phenotype  = c("Primary Hospitalisation", "Secondary Hospitalisation"),
   n_incident = c(
     sum(primary_hosp$after_index   == 1, na.rm = TRUE),
     sum(secondary_hosp$after_index == 1, na.rm = TRUE)
@@ -112,8 +112,8 @@ p1 <- ggplot(pct_data, aes(x = Phenotype, y = pct, fill = Phenotype)) +
   geom_text(aes(label = sprintf("%.2f%%\n(n = %s)", pct, format(n_incident, big.mark = ","))),
             vjust = -0.4, size = 3, fontface = "bold", colour = col_dark) +
   scale_fill_manual(values = c(
-    "Primary Care\nHospitalisation"   = col_dark,
-    "Secondary Care\nHospitalisation" = col_mid
+    "Primary Hospitalisation"   = col_dark,
+    "Secondary Hospitalisation" = col_mid
   )) +
   scale_y_continuous(
     limits = c(0, max(pct_data$pct) * 1.25),
@@ -159,7 +159,7 @@ p2 <- ggplot(primary_tte, aes(x = years_to_event)) +
   scale_x_continuous(breaks = seq(0, ceiling(max(primary_tte$years_to_event)), by = 1)) +
   scale_y_continuous(labels = comma) +
   labs(
-    title    = "B. Time to Primary Care Hospitalisation",
+    title    = "B. Time to Primary Hospitalisation",
     subtitle = "6-month bins; dashed line = median; pre-existing cases excluded",
     x        = "Years from Index Date",
     y        = "Number of Patients"
@@ -181,7 +181,7 @@ p3 <- ggplot(secondary_tte, aes(x = years_to_event)) +
   scale_x_continuous(breaks = seq(0, ceiling(max(secondary_tte$years_to_event)), by = 1)) +
   scale_y_continuous(labels = comma) +
   labs(
-    title    = "C. Time to Secondary Care Hospitalisation",
+    title    = "C. Time to Secondary Hospitalisation",
     subtitle = "6-month bins; dashed line = median; pre-existing cases excluded",
     x        = "Years from Index Date",
     y        = "Number of Patients"
@@ -192,7 +192,7 @@ p3 <- ggplot(secondary_tte, aes(x = years_to_event)) +
 # ── Combine and save ──────────────────────────────────────────────────────────
 combined <- p1 / (p2 | p3) +
   plot_annotation(
-    title    = "Depression Hospitalisation Phenotypes in a UK Primary Care Cohort",
+    title    = "Depression Hospitalisation Phenotypes",
     subtitle = sprintf("N = %s individuals with a valid antidepressant index date",
                        format(N, big.mark = ",")),
     caption  = "Index date: first antidepressant initiation. Pre-existing: hospitalisation prior to or at index date.",
